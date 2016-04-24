@@ -1,0 +1,10 @@
+What happens when you enter a URL?
+How does Spring work?
+Deadlock example.
+GET vs POST
+REST vs SOAP
+Serlvet vs JSP
+HashTable vs HashMap
+Databases SQL 
+InnerJoin vs OuterJoin
+Java Garbage Collection
