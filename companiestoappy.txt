@@ -4,7 +4,7 @@ Microsoft
 Uber
 eBay
 Paypal
-Pantheon Systmes
+Pantheon Systems
 Atypon
 Adobe
 LinkedIN
@@ -21,5 +21,22 @@ Ticketmaster
 EMC
 Nimble
 Intel?
+Dell
+Oracle
 Navdy
-
+Shutterfly
+Veritas
+PURE Storage
+Stripe
+AirBNB
+VMWare
+reddit
+Robinhood
+Atlassian
+BOX
+Palantir
+DropBox
+Twitter
+SalesForce
+IBM
+Intuit
