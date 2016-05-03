@@ -8,3 +8,16 @@ HashTable vs HashMap
 Databases SQL 
 InnerJoin vs OuterJoin
 Java Garbage Collection
+
+########### JS Concepts  ##############
+DOM manipulation without JQuery
+Regex(do not parse HTML with regex)
+AJAX and asynchronous calls
+Type Coercion, truth/falsy values
+Namespaces and scoping: IIFES, hoisting
+Closures
+OOP concepts and protoypes
+Basics of other frameworks: RX, Express, Ember
+
+########### C Programming ##############
+Using pointers and reference (similar to call by value/reference)
