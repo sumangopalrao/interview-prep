@@ -1,5 +1,4 @@
 What happens when you enter a URL?
-Deadlock example.
 GET vs POST
 REST vs SOAP
 Serlvet vs JSP
@@ -25,5 +24,12 @@ Closures
 OOP concepts and protoypes
 Basics of other frameworks: RX, Express, Ember
 
+########## AngularJS ###################
+Routing ui-routes and states
+Service vs Factory
+
+
 ########### C Programming ##############
 Using pointers and reference (similar to call by value/reference)
+Deadlock example.
+Mutex vs Semaphore
