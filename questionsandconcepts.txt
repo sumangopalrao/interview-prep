@@ -1,13 +1,19 @@
 What happens when you enter a URL?
-How does Spring work?
 Deadlock example.
 GET vs POST
 REST vs SOAP
 Serlvet vs JSP
-HashTable vs HashMap
 Databases SQL 
 InnerJoin vs OuterJoin
+
+########## Java #######################
 Java Garbage Collection
+HashTable vs HashMap
+How does Spring work?
+Authentication in Spring
+Limitations of Spring
+Annotations and their use
+
 
 ########### JS Concepts  ##############
 DOM manipulation without JQuery

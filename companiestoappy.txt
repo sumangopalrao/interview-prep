@@ -40,3 +40,7 @@ Twitter
 SalesForce
 IBM
 Intuit
+Walkme
+Lyft
+Twitch
+Spotify
