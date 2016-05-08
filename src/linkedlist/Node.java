@@ -19,4 +19,21 @@ public class Node {
 		}
 	}
 	
+	public static Node initializeSample()
+	{
+		Node a = new Node(5);
+		Node b = new Node(4);
+		Node c = new Node(2);
+		Node d = new Node(6);
+		Node e = new Node(4);
+		a.link = b; b.link = c; c.link=d; d.link = e; e.link = null;
+	    Node start= a;	
+	    while (start!= null)
+	    {
+	    	System.out.print(start.data + "---->");
+	    	start = start.link;
+	    }
+	    return a;
+	}
+	
 }
