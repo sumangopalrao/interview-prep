@@ -33,3 +33,6 @@ Service vs Factory
 Using pointers and reference (similar to call by value/reference)
 Deadlock example.
 Mutex vs Semaphore
+
+########### General ###################
+Recursion not recommended for production code as it takes stack space proprtional to size.
