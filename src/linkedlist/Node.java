@@ -1,3 +1,4 @@
+//A Simple Representation of a Node in a linked list.
 package linkedlist;
 
 public class Node {

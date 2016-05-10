@@ -1,3 +1,4 @@
+//WAP to reverse a linked list
 package linkedlist;
 
 public class Reverse {

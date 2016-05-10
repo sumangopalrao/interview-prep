@@ -1,3 +1,4 @@
+//WAP to detect a loop in a linked list.
 package linkedlist;
 
 public class DetectLoop {

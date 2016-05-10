@@ -1,3 +1,4 @@
+//WAP to remove duplicates in a linked list.
 package linkedlist;
 
 import java.util.HashSet;
