@@ -36,3 +36,20 @@ Mutex vs Semaphore
 
 ########### General ###################
 Recursion not recommended for production code as it takes stack space proprtional to size.
+K points closest to origin algorithm. 
+- Use sorting then find the first k.
+- Use Min heap.
+- Use quick partition.
+- Use k-d tree logn.
+Enhancement: What if the input size is not constant and inifinite like a stream?
+Perfect solution not possible but can close it down to a value close like 0.000001.
+
+
+How to loop through a for loop a thousand times a second?
+Use queries per second, thread.sleep((b-a) - 1 / number)
+
+
+KMP Algorithm
+
+
+Take an array and split them odd left and even right, then sort them. 
