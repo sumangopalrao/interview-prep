@@ -68,3 +68,5 @@ Quora
 Fitbit
 MyFitnessPal
 Asana
+Workday
+Gap Inc.

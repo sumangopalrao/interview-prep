@@ -17,10 +17,8 @@ public class RepeatingCharacters {
 			}
 			i=j;
 			
-			
 		}
 		
-		List<int> a = new ArrayList<int>();
 		System.out.println(r);
 	}
 

@@ -53,3 +53,6 @@ KMP Algorithm
 
 
 Take an array and split them odd left and even right, then sort them. 
+
+
+Square root of a number(float) without inbuilt functions.
