@@ -1,3 +1,4 @@
+//WAP to print the two elements of an array whose sum is closest to zero. 
 package arrays;
 
 import java.util.Arrays;

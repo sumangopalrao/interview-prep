@@ -1,3 +1,4 @@
+//WAP to reverse an array. 
 package arrays;
 
 public class ReverseArray {

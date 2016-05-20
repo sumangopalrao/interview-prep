@@ -1,3 +1,4 @@
+//WAP to find the pair of integers in an array whose sum is k. 
 package arrays;
 
 import java.util.HashMap;

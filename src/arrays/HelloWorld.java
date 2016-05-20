@@ -1,3 +1,4 @@
+//Chill, just a warmup.
 package arrays;
 
 public class HelloWorld {

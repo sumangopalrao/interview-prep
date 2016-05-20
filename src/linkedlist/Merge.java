@@ -1,3 +1,4 @@
+//WAP to do a merge sort on two linked lists and store in a new linked list.
 package linkedlist;
 
 public class Merge {

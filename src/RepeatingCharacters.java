@@ -1,4 +1,5 @@
-
+//WAP to replace consecutive characters in a string and replace with the single repeating character. 
+//Ex. aaaaabbccdaa = abcda
 public class RepeatingCharacters {
 
 	public static void main(String[] args) {

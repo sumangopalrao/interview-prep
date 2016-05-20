@@ -1,3 +1,4 @@
+//WAP to print the smallest and the second smallest element in an array. 
 package arrays;
 
 public class SmallestandSmaller {

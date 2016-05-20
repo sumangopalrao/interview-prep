@@ -1,3 +1,5 @@
+//WAP first recurring element in array when traversing from left to right. 
+//Hint: first recurring from left to right ====> ? recurring from right to left
 package arrays;
 
 import java.util.HashSet;

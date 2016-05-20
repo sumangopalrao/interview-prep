@@ -56,3 +56,6 @@ Take an array and split them odd left and even right, then sort them.
 
 
 Square root of a number(float) without inbuilt functions.
+
+
+Design/Implement a binary tree. Add a new method to find the next greatest element in the tree. 

@@ -1,3 +1,4 @@
+//A simple implementation of a linked list.
 package linkedlist;
 
 public class LinkedList {
@@ -24,13 +25,15 @@ public class LinkedList {
 		
 //		list.printList();
 		
-		Node first = new Node(100);
-		list.insertNodeAtFirst(first);
+//		Node first = new Node(100);
+//		list.insertNodeAtFirst(first);
 		
-		Node newNode = new Node(200);
+//		Node newNode = new Node(200);
 //		list.insertNodeAfterGivenNode(e, newNode);
 		
-		list.insertNodeAtEnd(newNode);
+//		list.insertNodeAtEnd(newNode);
+//		list.deleteNode(8);
+		list.nodeDeletePosition(3);
 		list.printList();
 	}
 	
@@ -85,6 +88,58 @@ public class LinkedList {
 	    }
 	    curr.link = newNode;
 	    return;
+	}
+	
+	public void deleteNode(int data) {
+		Node node = new Node(data);
+        if(head.link== null && head.data == data)
+        {
+        	head = null;
+        	return;
+        }
+        
+		Node curr = head;
+		Node prev=null;
+		while(curr != null)
+		{
+			if(curr.data == node.data) {
+				prev.link = curr.link;
+				return;
+			}
+			prev = curr;
+			curr = curr.link;
+		}
+		return;
+		
+	}
+	
+	
+	public void nodeDeletePosition(int pos)
+	{
+		if(head == null) {
+			return;
+		}
+		if(head.link == null && pos == 1) {
+			head = null;
+			return;
+		}
+		if(pos == 1) {
+			head = head.link;
+			return;
+		}
+	    int i=1;	
+	    Node curr = head;
+	    Node prev = null;
+	    while(curr != null && i != pos) {
+	    	i++;
+	    	prev = curr;
+	    	curr = curr.link;
+	    }
+	    if(i == pos) {
+	    	prev.link= curr.link;
+	    }
+	    return;
+
 	}
 	
 

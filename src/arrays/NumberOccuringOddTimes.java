@@ -1,3 +1,4 @@
+//WAP to print the number that is occuring in the array odd number of times. 
 package arrays;
 
 public class NumberOccuringOddTimes {
