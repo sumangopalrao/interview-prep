@@ -27,12 +27,16 @@ Basics of other frameworks: RX, Express, Ember
 ########## AngularJS ###################
 Routing ui-routes and states
 Service vs Factory
+Keypress vs Keydown
+Events in angular
+Scope digest cycles
 
 
 ########### C Programming ##############
 Using pointers and reference (similar to call by value/reference)
 Deadlock example.
 Mutex vs Semaphore
+Void pointers and using them for generics in C. 
 
 ########### General ###################
 Recursion not recommended for production code as it takes stack space proprtional to size.
