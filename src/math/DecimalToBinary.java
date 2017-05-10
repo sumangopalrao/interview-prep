@@ -1,3 +1,4 @@
+package math;
 //WAP to convert a decimal number to its binary. 
 import java.util.Stack;
 

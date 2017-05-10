@@ -1,3 +1,4 @@
+package math;
 //LeetCode :: Add the digits in a number till you get a single digit
 public class AddDigits {
 

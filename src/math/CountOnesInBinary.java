@@ -1,3 +1,4 @@
+package math;
 //LeetCode: WAP where input n is given. Print the number of 1's in the binary representation for each digit i 0ton. 
 public class CountOnesInBinary {
 
