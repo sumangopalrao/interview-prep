@@ -1,3 +1,5 @@
+package arrays;
+
 public class CheckUnique {
    public static boolean check(String val) {
         int checker = 0;

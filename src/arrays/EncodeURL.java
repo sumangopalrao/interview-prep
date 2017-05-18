@@ -1,3 +1,5 @@
+package arrays;
+
 public class EncodeURL {
    
    public static String enc(String in, int len) {

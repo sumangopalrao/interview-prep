@@ -1,3 +1,5 @@
+package arrays;
+
 public class PalindromeString {
     private static boolean isPalindrome(String s1, String s2) {
         int[] count = new int[26];
