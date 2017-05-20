@@ -1,4 +1,5 @@
 //WAP to do a merge sort on two linked lists and store in a new linked list.
+//C7.1 EPI 
 package linkedlist;
 
 public class Merge {
@@ -14,8 +15,12 @@ public class Merge {
 	
 	static Node merge(Node headA, Node headB)
 	{
-		if(headA== null || headB == null)
+		if(headA== null && headB == null)
 			return null;
+		if(headA == null)
+			return headB;
+		if(headB == null)
+			return headA;
 		
 		Node currA = headA;
 		Node currB= headB;
@@ -29,7 +34,7 @@ public class Merge {
 		    	currC.link = currA;
 		    	currA = currA.link;
 		    }
-		    else if(currA.data >= currB.data)
+		    else if(currA.data > currB.data)
 		    {
 		    	currC.link = currB;
 		    	currB = currB.link;
@@ -49,12 +54,7 @@ public class Merge {
 			currC.link = currB;
 			currC = currC.link;
 			currB = currB.link;
-		}
-		
+		}	
 		return headC.link;
-		
-		
-		
 	}
-
 }
