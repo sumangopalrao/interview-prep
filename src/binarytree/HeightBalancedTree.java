@@ -32,5 +32,4 @@ public class HeightBalancedTree {
         root.left.left.left = new Node(5);
         System.out.println(isHeightBalanced(root));
 	}
-
 }
