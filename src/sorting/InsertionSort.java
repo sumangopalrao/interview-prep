@@ -1,3 +1,4 @@
+//Program to perform insertion sort.
 package sorting;
 
 public class InsertionSort {
@@ -24,5 +25,4 @@ public class InsertionSort {
 			System.out.println(i+",");
 		}
 	}
-
 }
