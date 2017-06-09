@@ -1,4 +1,4 @@
-//Program to create a tree given a sorted array. 
+//Program to create a BST given a sorted array. 
 //CTCI 4.2
 package binarytree;
 
@@ -13,8 +13,6 @@ public class CreateMinimalTree {
 	private static Node createNodes(int[] arr, int low, int high) {
 		if(low > high)
 			return null;
-//		if(low == high)
-//			return new Node(arr[low]);
 		int mid = (low+high)/2;
 		Node root = new Node(arr[mid]);
 		root.left = createNodes(arr, low, mid-1);
