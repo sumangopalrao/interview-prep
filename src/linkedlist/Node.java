@@ -34,7 +34,8 @@ public class Node {
 		Node c = new Node(6);
 		Node d = new Node(8);
 		Node e = new Node(10);
-		a.link = b; b.link = c; c.link=d; d.link = e; e.link = null;
+		Node f = new Node(12);
+		a.link = b; b.link = c; c.link=d; d.link = e; e.link = f;f.link = null;
 	    Node start= a;	
 	    while (start!= null)
 	    {
