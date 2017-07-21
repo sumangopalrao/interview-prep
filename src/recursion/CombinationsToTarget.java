@@ -1,6 +1,6 @@
 //Program to find the number ways to reach a given target given scores such as 2, 3 and 7.
 //C18.1 EPI
-package dynamicprogramming;
+package recursion;
 
 public class CombinationsToTarget {
 

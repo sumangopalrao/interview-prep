@@ -11,6 +11,10 @@ public class LinkedList {
 		this.head = null;
 	}
 	
+	LinkedList(Node head) {
+		this.head = head;
+	}
+	
 	public static void main(String args[])
 	{
 		LinkedList list = new LinkedList();
