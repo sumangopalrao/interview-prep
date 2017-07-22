@@ -1,3 +1,5 @@
+//Program to check if string has all characters unique.
+//CTCI 1.1
 package arrays;
 
 public class CheckUnique {
