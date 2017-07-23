@@ -1,7 +1,11 @@
+//URLify:Convert spaces in the string to %20. 
+//CTCI 1.3
+
 package arrays;
 
 public class EncodeURL {
-   
+
+	//Can be done by traversing in reverse order in one pass.
    public static String enc(String in, int len) {
        char[] out = new char[len];
        int j=0;

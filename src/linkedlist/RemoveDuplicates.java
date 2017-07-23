@@ -1,4 +1,5 @@
 //WAP to remove duplicates in a linked list.
+//CTCI 2.1
 package linkedlist;
 
 import java.util.HashSet;
@@ -14,7 +15,43 @@ public class RemoveDuplicates {
 		Node d = new Node(6);
 		Node e = new Node(4);
 		a.link = b; b.link = c; c.link=d; d.link = e; e.link = null;
-	    Node start= a;	
+		
+	    Node outA = removeDupsWithSet(a);
+	    Node.printList(outA);
+	    
+	    
+	    System.out.println("Output from no space");
+	    
+	    Node headB = Node.initializeSampleB();
+	    Node outB = removeDupsWithoutSpace(headB);
+	    Node.printList(outB);
+	}
+
+	private static Node removeDupsWithoutSpace(Node a) {
+		
+		Node head = a;
+		Node start = a;
+		while(start != null) {
+			Node curr = start.link;
+			Node prev = start;
+			while(curr != null) {
+				if(curr.data == start.data) {
+					Node next = curr.link;
+					prev.link = next;
+					curr = next;
+				}
+				else {
+					prev = curr;
+					curr = curr.link;
+				}
+			}
+			start = start.link;
+		}
+		return head;
+	}
+
+	private static Node removeDupsWithSet(Node a) {
+		Node start= a;	
 	    while (start!= null)
 	    {
 	    	System.out.print(start.data + "---->");
@@ -36,9 +73,7 @@ public class RemoveDuplicates {
 	    	}
 	    	start = start.link;
 	    }
-	    System.out.println("Output");
-	    Node.printList(a);
-
+	    return a;
 	}
 
 }

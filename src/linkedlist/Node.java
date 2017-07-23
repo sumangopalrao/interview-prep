@@ -50,8 +50,8 @@ public class Node {
 		Node a = new Node(1);
 		Node b = new Node(2);
 		Node c = new Node(3);
-		Node d = new Node(4);
-		Node e = new Node(5);
+		Node d = new Node(1);
+		Node e = new Node(3);
 		a.link = b; b.link = c; c.link=d; d.link = e; e.link = null;
 	    Node start= a;	
 	    while (start!= null)
