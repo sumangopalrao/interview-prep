@@ -1,4 +1,5 @@
 //LeetCode:: Remove node give only access to node.
+//CTCI 2.3
 package linkedlist;
 
 public class RemoveNode {
