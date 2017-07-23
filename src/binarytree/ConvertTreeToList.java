@@ -7,33 +7,22 @@ import java.util.List;
 
 public class ConvertTreeToList {
 	
-	public static int height(Node root) {
-		if(root == null)
-			return 0;
-		return 1+Math.max(height(root.left), height(root.right));
-	}
-	
 	public static List<List<Node>> convertToList(Node root) {
 		if(root == null)
 			return null;
 		List<List<Node>> result = new LinkedList<List<Node>>();
 		List<Node> rootList = new LinkedList<Node>();
 		rootList.add(root);
-		result.add(rootList);
-		int h = height(root);
-		System.out.println("Height is:"+h);
-		int i = 0;
-		while(i < h) {
-			List<Node> innerList = result.get(i);
-			List<Node> levelList = new LinkedList<Node>();
+		while(rootList.size() > 0) {
+			result.add(rootList);
+			List<Node> innerList = rootList;
+			rootList = new LinkedList<Node>();
 			for(Node n : innerList) {
 				if(n.left != null)
-					levelList.add(n.left);
+					rootList.add(n.left);
 				if(n.right != null)
-					levelList.add(n.right);	
+					rootList.add(n.right);	
 			}
-			result.add(levelList);
-			i++;
 		}
 		return result;
 	}
