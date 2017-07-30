@@ -1,5 +1,5 @@
 //Given an array of strings, group the anagrams together.
-//CTCI 10.1
+//CTCI 10.2
 
 package sorting;
 
