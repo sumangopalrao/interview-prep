@@ -1,5 +1,5 @@
 //Program to check if string is a permutation of a palindrome
-//CTCI 1.5
+//CTCI 1.4
 package arrays;
 
 public class PalindromePermutation {
