@@ -45,6 +45,17 @@ public class Node {
 	    return a;
 	}
 	
+	public static Node initializeRandomSample() 
+	{
+		Node a = new Node(3);
+		Node b = new Node(5);
+		Node c = new Node(1);
+		Node d = new Node(2);
+		Node e = new Node(4);
+		a.link=b;b.link=c;c.link=d;d.link=e;e.link=null;
+		return a;
+	}
+	
 	public static Node initializeSampleB()
 	{
 		Node a = new Node(1);
