@@ -52,6 +52,16 @@ public class Stack<T> {
 	public boolean isEmpty() {
 		return head == null;
 	}
+	
+	public int size() {
+		int size = 0;
+		StackNode<T> curr = head;
+		while(curr != null) {
+			size++;
+			curr = curr.next;
+		}
+		return size;
+	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

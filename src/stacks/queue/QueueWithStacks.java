@@ -1,5 +1,5 @@
 //Program to implement a myqueue class using stacks.
-//CTCI 3.5
+//CTCI 3.4
 
 package stacks.queue;
 

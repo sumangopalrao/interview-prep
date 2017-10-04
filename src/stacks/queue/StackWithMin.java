@@ -1,5 +1,5 @@
 //Stack which returns the minimum value in O(1).
-//CTCI 3.3
+//CTCI 3.2
 
 package stacks.queue;
 
