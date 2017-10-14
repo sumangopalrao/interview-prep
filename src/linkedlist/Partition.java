@@ -53,5 +53,4 @@ public class Partition {
 		Node h = getPartitionList(head, 3);
 		Node.printList(h);
 	}
-
 }
