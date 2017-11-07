@@ -1,4 +1,6 @@
-//CTCI 8.5 Program to find the product without using the * symbol.
+//CTCI 8.5 
+//Program to find the product without using the * symbol.
+
 package recursion;
 
 public class ProductWithoutMultiply {
