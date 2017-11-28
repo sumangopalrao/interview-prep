@@ -2,7 +2,7 @@ package design.factorypattern;
 
 public class ShapeFactory {
 
-	public static Shape getShape(String type, int r) {
+	public Shape getShape(String type, int r) {
 		if(type.equals("CIRCLE"))
 			return new Circle(r);
 		if(type.equals("SQUARE"))
