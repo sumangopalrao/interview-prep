@@ -1,6 +1,6 @@
 //Given two sorted arrays merge so that one can be added to end of other.
 //CTCI 10.1
-package sorting;
+package sorting.searching;
 
 public class MergeSortedArrays {
 	

@@ -1,6 +1,6 @@
 //Program to compute the intersection of two arrays.
 //C14.1 EPI 
-package sorting;
+package sorting.searching;
 
 public class IntersectionOfArrays {
 	

@@ -1,5 +1,5 @@
 //Program to perform insertion sort.
-package sorting;
+package sorting.searching;
 
 public class InsertionSort {
 

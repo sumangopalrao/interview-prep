@@ -1,7 +1,7 @@
 //Given an array of strings, group the anagrams together.
 //CTCI 10.2
 
-package sorting;
+package sorting.searching;
 
 import java.util.ArrayList;
 import java.util.Arrays;

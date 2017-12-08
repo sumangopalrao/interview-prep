@@ -1,6 +1,6 @@
 //Program to sort list of students based on their gpa. 
 //EPI Sorting Boot Camp
-package sorting;
+package sorting.searching;
 
 import java.util.Arrays;
 
