@@ -1,25 +1,28 @@
-//Own implementation of a string buffer
-package arrays;
+//Own implementation of a string builder 
+//CTCI chapter 1 desc.
 
-public class StringBufferImpl {
+package design;
+
+public class StringBuilder {
 	
-	private static final int length = 5;
+	//default used in Java implementation source code
+	private static final int length = 16;
 	int count;
 	char[] arr;
 	
-	StringBufferImpl() {
+	StringBuilder() {
 		arr = new char[length];
 		count = 0;
 	}
 	
-	StringBufferImpl(int  capacity) {
+	StringBuilder(int  capacity) {
 		arr = new char[capacity];
 		count = 0;
 	}
 	
 	public void append(char a) {
 		if(count + 1 > length) {
-			char[] new_arr = new char[count + length];
+			char[] new_arr = new char[(arr.length + 1) * 2];
 			for(int i=0; i<arr.length; i++) {
 				new_arr[i] = arr[i];
 			}
@@ -36,7 +39,7 @@ public class StringBufferImpl {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		StringBufferImpl str = new StringBufferImpl();
+		StringBuilder str = new StringBuilder();
 		str.append('a');
 		str.append('b');
 		str.append('c');
