@@ -23,7 +23,7 @@ public class ArrayPairSum {
     	System.out.println("The indicies are:"+indices[0] + "," + indices[1]);
     }
     
-    private static int[] findPair(int[] a, int sum) {
+    public static int[] findPair(int[] a, int sum) {
 		Set<Integer> set = new HashSet<Integer>();
 		int[] res = new int[2];
         
@@ -41,7 +41,7 @@ public class ArrayPairSum {
         return res;
 	}
 
-	private static int[] findIndicies(int[] a, int sum) {
+	public static int[] findIndicies(int[] a, int sum) {
 		Map<Integer, Integer> map = new HashMap<Integer, Integer>();
 		int[] res = new int[2];
         
