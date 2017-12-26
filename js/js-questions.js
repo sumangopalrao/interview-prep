@@ -76,4 +76,62 @@ function lookUpProfile(firstName, prop){
 }
 
 // Change these values to test your function
-lookUpProfile("Akira", "likes");
+//lookUpProfile("Akira", "likes");
+
+
+
+function whatIsInAName(collection, source) {
+  // What's in a name?
+  var arr = [];
+  // Only change code below this line
+  collection.some(function(f) {
+      console.log("Input:", f);
+      var flag = true;
+      Object.keys(source).forEach(function(k) {
+           console.log("K:", k, "and: f", f);
+           console.log(f.hasOwnProperty(k));
+           console.log(f[k]);
+           console.log(source[k]);
+          if(!f.hasOwnProperty(k) || f[k] !== source[k]) {
+            flag = false;
+          }
+      });
+      if(flag === true) {
+         arr.push(f);
+      }
+  });
+
+  console.log(source["abc"]);
+  // Only change code above this line
+  console.log("Output:");
+  console.log(arr);
+  return arr;
+}
+
+//whatIsInAName([{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: null }, { first: "Tybalt", last: "Capulet" }], { last: "Capulet" });
+
+
+
+function myReplace(str, before, after) {
+  var arr = str.split(" ");
+  var cpy = [];
+  arr.forEach(function(f) {
+    if(f === before) {
+      for(var i=0; i<f.length; i++) {
+        if(f.charAt(i) === f.charAt(i).toUpperCase()) {
+            console.log("Came here");
+            after = after.charAt(i).toUpperCase() + after.slice(1);
+          // after.replace(before.charAt(i), before.charAt(i).toUpperCase());
+        }
+      }
+      cpy.push(after);
+    }
+    else {
+      cpy.push(f);
+    }
+  });
+  console.log(cpy);
+  return cpy.join();
+}
+
+myReplace("A quick brown fox Jumped over the lazy dog", "Jumped", "leaped");

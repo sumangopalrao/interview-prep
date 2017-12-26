@@ -1,4 +1,5 @@
 package math;
+
 //LeetCode :: Add the digits in a number till you get a single digit
 public class AddDigits {
 
@@ -9,7 +10,7 @@ public class AddDigits {
 
 	}
 	
-	    public static int addDigits(int num) {
+	    private static int addDigits(int num) {
 	        if(num < 10)
 	             return num;
 	        
