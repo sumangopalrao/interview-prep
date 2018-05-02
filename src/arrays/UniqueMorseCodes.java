@@ -26,9 +26,6 @@ The transformation of each word is:
 "msg" -> "--...--."
 
 There are 2 different transformations, "--...-." and "--...--.".
- * 
- * @author suman.rao
- *
  */
 public class UniqueMorseCodes {
 
