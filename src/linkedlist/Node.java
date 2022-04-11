@@ -19,10 +19,8 @@ public class Node {
 	public static void printList(Node head)
 	{
 		if(head == null)
-		    System.out.println("null");
 		while(head != null)
 		{
-			System.out.print(head.data + "--->");
 			head = head.link;
 		}
 	}
@@ -39,7 +37,6 @@ public class Node {
 	    Node start= a;	
 	    while (start!= null)
 	    {
-//	    	System.out.print(start.data + "---->");
 	    	start = start.link;
 	    }
 	    return a;
@@ -67,7 +64,6 @@ public class Node {
 	    Node start= a;	
 	    while (start!= null)
 	    {
-//	    	System.out.print(start.data + "---->");
 	    	start = start.link;
 	    }
 	    return a;

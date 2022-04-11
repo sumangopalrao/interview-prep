@@ -26,18 +26,7 @@ public class LinkedList {
 		a.link = b; b.link = c; c.link=d; d.link = e; e.link = null;
 	    
 		list.head = a;
-		
-//		list.printList();
-		
-//		Node first = new Node(100);
-//		list.insertNodeAtFirst(first);
-		
-//		Node newNode = new Node(200);
-//		list.insertNodeAfterGivenNode(e, newNode);
-		
-//		list.insertNodeAtEnd(newNode);
-//		list.deleteNode(8);
-		list.nodeDeletePosition(3);
+				list.nodeDeletePosition(3);
 		list.printList();
 	}
 	
@@ -68,7 +57,6 @@ public class LinkedList {
 
 		newNode.link = oldNode.link;
 		oldNode.link = newNode;
-	    //inserting after a value
 //	    while (curr != null) {
 //	    	if(curr.data == oldNode.data) {
 //	    		Node next = curr.link;
@@ -145,6 +133,4 @@ public class LinkedList {
 	    return;
 
 	}
-	
-
 }
