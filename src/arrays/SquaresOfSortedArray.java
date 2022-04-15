@@ -23,7 +23,6 @@ public class SquaresOfSortedArray {
     }
 
     public static void main(String[] args) {
-		// TODO Auto-generated method stub
         int[] arr = {-7,-3,2,3,11};
         for (int val : findSortedSquares(arr)) {
             System.out.println(val);
