@@ -1,6 +1,5 @@
 //Program to find the build order given the set of projects and dependencies.
 //CTCI 4.7
-
 package graphs;
 
 import java.util.HashMap;
@@ -16,13 +15,6 @@ public class BuildOrder {
 	private static Stack<String> findBuildOrder(String[] projects, String[][] dependencies) {
 		Stack<String> order = new Stack<String>();
 		Map<String, List<String>> adjList = convertToList(dependencies);
-//		for(String s : adjList.keySet()) {
-//			List<String> l = adjList.get(s);
-//			System.out.println("Key:"+s);
-//			for(String c : l) {
-//				System.out.print(c + ",");
-//			}
-//		}
 		return findOrder(projects, adjList);
 	}
 	
@@ -77,5 +69,4 @@ public class BuildOrder {
 			System.out.println(out.pop());
 		}
 	}
-
 }
