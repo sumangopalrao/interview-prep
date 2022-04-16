@@ -15,8 +15,10 @@ public class DetectLoop {
 
 	}
 	
-	static Boolean checkLoop(Node head)
-	{
+	static Boolean checkLoop(Node head) {
+		if (head == null) {
+            return false;
+        }
 		Node slower = head;
 		Node runner = head.link;
 		
@@ -28,7 +30,5 @@ public class DetectLoop {
 		    runner = runner.link.link;
 		}
 		return false;
-		
 	}
-
 }
