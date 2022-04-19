@@ -1,4 +1,4 @@
-//WAP to detect a loop in a linked list.
+//WAP to detect a loop in a linked list. (LinkedList I)
 package linkedlist;
 
 public class DetectLoop {
