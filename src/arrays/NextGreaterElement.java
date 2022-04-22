@@ -57,9 +57,7 @@ public class NextGreaterElement {
 // 	}
 	
 	
-	
-//	
-//	public static ArrayList<Integer> nextGreater(ArrayList<Integer> a) {
+//		public static ArrayList<Integer> nextGreater(ArrayList<Integer> a) {
 //	    ArrayList<Integer> res = new ArrayList<Integer>(a.size());
 //	    int[] r = new int[a.size()];
 //	    int curLen = 0;
