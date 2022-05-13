@@ -4,7 +4,7 @@ package linkedlist;
 public class Reverse {
 
 	public static void main(String[] args) {
-		// TODO Implement using recursion
+		// TODO:: Implement using recursion
 		
 		Node curr = Node.initializeSample();
 		Node head = curr;
@@ -20,8 +20,5 @@ public class Reverse {
 		head = prev;
 		
 	    Node.printList(head);
-		
-
 	}
-
 }
