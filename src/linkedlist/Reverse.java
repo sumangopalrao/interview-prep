@@ -19,6 +19,24 @@ public class Reverse {
 		}
 		head = prev;
 		
+		head = reverseNode(head);
+
 	    Node.printList(head);
+	}
+
+
+	private static Node reverseNode(Node head) {
+		if (head == null) 
+			return null;
+
+		if (head.next == null) 
+			return head;
+
+		Node newHead = reverseNode(head.next);
+
+		head.next.next = head;
+		head.next = null;
+
+		return newHead;
 	}
 }
