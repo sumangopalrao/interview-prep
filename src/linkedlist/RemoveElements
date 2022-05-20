@@ -1,0 +1,45 @@
+//LeetCode:: Given the head of a linked list and an integer val, remove all the nodes of the linked list that has Node.val == val, and return the new head.
+
+package linkedlist;
+
+public class RemoveElements {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Node currA = Node.initializeSample();
+		Node.printList(currA);
+		removeElement(currA, 6);
+		Node.printList(currA);
+	}
+	
+	static void removeElement(Node head, int val)
+	{
+		if(head == null) {
+			return null;
+        }
+        
+        if(head.link == null && head.data == val) {
+            return null;
+        }
+	    
+        Node prev = null;
+        Node newHead = head;
+        Node curr = head;
+
+        while (curr != null) {
+            if (curr.data == val) {
+                if (prev != null) {
+                    prev.link = curr.link;
+                } else {
+                    newHead = curr.link;
+                }
+                curr = curr.link;
+            } else {
+                prev = curr;
+                curr = curr.link;
+            }
+        }
+        return newHead;
+	}
+}
