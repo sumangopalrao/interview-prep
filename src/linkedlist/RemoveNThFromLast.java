@@ -6,7 +6,8 @@ public class RemoveNThFromLast {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Node head = Node.initializeSample();
-		System.out.println(getKthNode(head, 3).data);
+        Node res = getKthNode(head, 3);
+		System.out.println(res.data);
 	}
 
 	private static ListNode removeNthFromEnd(ListNode head, int n) {
