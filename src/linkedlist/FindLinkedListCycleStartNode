@@ -48,9 +48,6 @@ public class FindLinkedListCycleStartNode {
             }
 
             return curr;
-            // if (curr == slower) {
-                // return curr;
-            // }
         }
 
         return null;
