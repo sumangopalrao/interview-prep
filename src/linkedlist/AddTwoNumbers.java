@@ -1,5 +1,6 @@
 /*** Leetcode #2 ***/
-//CTCI 2.5
+// CTCI 2.5
+// Add two linked lists
 
 package linkedlist;
 
