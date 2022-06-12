@@ -7,7 +7,6 @@ public class SearchInRotatedArray {
             return -1;
         int low = 0;
         int high = nums.length - 1;
-        // int mid = low + (high - low) / 2;
         
         while(low <= high) {
             int mid = low + (high - low) / 2;
@@ -35,7 +34,6 @@ public class SearchInRotatedArray {
 	
 	public static void main(String[] args) {
 		int[] arr = new int[]{2, 3, 4, 5, 1};
-		
 		System.out.println(search(arr, 2));
 	}
 }
