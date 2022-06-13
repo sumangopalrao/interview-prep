@@ -6,30 +6,30 @@ public class RemoveNThFromLast {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Node head = Node.initializeSample();
-        Node res = getKthNode(head, 3);
+        Node res = removeNthFromEnd(head, 3);
 		System.out.println(res.data);
 	}
 
-	private static ListNode removeNthFromEnd(ListNode head, int n) {
-        ListNode curr = head;
-        ListNode currLast = head;
+	private static Node removeNthFromEnd(Node head, int n) {
+        Node curr = head;
+        Node currLast = head;
         int i = 0;
         while (curr != null && i<n) {
-            curr = curr.next;
+            curr = curr.link;
             i++;
         }
         if (curr == null) {
-            return head.next;
+            return head.link;
         }
 
-        ListNode prev = head;
+        Node prev = head;
         
-        while (curr.next != null) {
-            curr = curr.next;
-            currLast = currLast.next;
+        while (curr.link != null) {
+            curr = curr.link;
+            currLast = currLast.link;
         }
         
-        currLast.next = currLast.next.next;
+        currLast.link = currLast.link.link;
         return head;
     }
 }

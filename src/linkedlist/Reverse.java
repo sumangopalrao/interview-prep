@@ -29,13 +29,13 @@ public class Reverse {
 		if (head == null) 
 			return null;
 
-		if (head.next == null) 
+		if (head.link == null)
 			return head;
 
-		Node newHead = reverseNode(head.next);
+		Node newHead = reverseNode(head.link);
 
-		head.next.next = head;
-		head.next = null;
+		head.link.link = head;
+		head.link = null;
 
 		return newHead;
 	}
