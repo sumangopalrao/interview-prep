@@ -18,9 +18,12 @@ public class Node {
 	
 	public static void printList(Node head)
 	{
-		if(head == null)
+		if(head == null) {
+			return;
+		}
 		while(head != null)
 		{
+			System.out.println(head.data + ",");
 			head = head.link;
 		}
 	}
