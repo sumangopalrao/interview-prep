@@ -12,9 +12,8 @@ public class ReverseArray {
 		{
 			b[j++] = a[i];
 		}
-		for(int i=0; i<b.length; i++)
-		{
-		   System.out.println(b[i]);
+		for (int k : b) {
+			System.out.println(k);
 		}
 	}
 }
