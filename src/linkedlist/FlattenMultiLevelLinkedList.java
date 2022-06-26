@@ -1,4 +1,5 @@
 // Leetcode: Flatten a Multilevel Doubly Linked List
+package linkedlist;
 
 public class FlattenMultiLevelLinkedList {
     DoublyLinkedListNodeWithChild tail = null;
@@ -17,7 +18,7 @@ public class FlattenMultiLevelLinkedList {
         
         return head;
     }
-    class DoublyLinkedListNodeWithChild {
+    static class DoublyLinkedListNodeWithChild {
         public int val;
         public DoublyLinkedListNodeWithChild prev;
         public DoublyLinkedListNodeWithChild next;
