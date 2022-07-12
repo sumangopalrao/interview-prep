@@ -4,7 +4,7 @@
 package arrays;
 
 public class StringToInt {
-	
+
 	private static String intToString(int m) {
 		StringBuilder str = new StringBuilder();
 		if(m == 0)
@@ -15,31 +15,99 @@ public class StringToInt {
 			n = n/10;
 			str.append(r);
 		}
-		if(m < 0) 
+		if(m < 0)
 			return str.append("-").reverse().toString();
 		return str.reverse().toString();
 	}
-	
+
 	private static int stringToInt(String s) {
-		int val = 0;
+		int sign = 1;
+		if (s.length() == 0)
+			return 0;
+		long val = 0;
 		int i = 0;
 		int r = 1;
-		if(s.charAt(0) == '-') {
-			i=1;
-			r=-1;
+		boolean flag = false;
+		int result = 0;
+		int n = s.length();
+		while (i < n && s.charAt(i) == ' ') {
+			i++;
 		}
-		for(; i<s.length(); i++) {
-			int v = s.charAt(i) - '0';
-			val = val*10 + v;
+
+		if (i < n && s.charAt(i) == '+') {
+			sign = 1;
+			i++;
+		} else if (i < n && s.charAt(i) == '-') {
+			sign = -1;
+			i++;
 		}
-		return val*r;
+
+		// Traverse next digits of input and stop if it is not a digit
+		while (i < n && Character.isDigit(s.charAt(i))) {
+			int digit = s.charAt(i) - '0';
+
+			// Check overflow and underflow conditions.
+			if ((result > Integer.MAX_VALUE / 10) ||
+					(result == Integer.MAX_VALUE / 10 && digit > Integer.MAX_VALUE % 10)) {
+				// If integer overflowed return 2^31-1, otherwise if underflowed return -2^31.
+				return sign == 1 ? Integer.MAX_VALUE : Integer.MIN_VALUE;
+			}
+
+			// Append current digit to the result.
+			result = 10 * result + digit;
+			i++;
+		}
+
+		// We have formed a valid number without any overflow/underflow.
+		// Return it after multiplying it with its sign.
+		return sign * result;
+
+
+
+// 		for(; i<s.length(); i++) {
+// 			if (s.charAt(i) == ' ')
+// 				continue;
+//             else if (s.charAt(i) == '+') {
+//                 if (flag)
+//                     return 0;
+//                 flag = true;
+//             }
+// 			else if(s.charAt(i) == '-') {
+// 				// i=1;
+//                 if (flag)
+//                     return 0;
+// 				r=-1;
+//                 flag = true;
+// 			}
+// 			else {
+// 				int v = s.charAt(i) - '0';
+// 				if (v <0 || v>9) {
+
+// 					if (val*r > Integer.MAX_VALUE) {
+// 						return Integer.MAX_VALUE;
+// 					}
+//         else if (val*r < Integer.MIN_VALUE) {
+//             return Integer.MIN_VALUE;
+//         }
+// 		return (int) (val*r);
+// 				}
+// 				val = val*10 + v;
+// 			}
+// 		}
+//         if (val*r > Integer.MAX_VALUE) {
+// 						return Integer.MAX_VALUE;
+// 					}
+//         else if (val*r < Integer.MIN_VALUE) {
+//             return Integer.MIN_VALUE;
+//         }
+// 		return (int) (val*r);;
 	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int n = 0;
 		System.out.println(intToString(n));
-		String s = "-321000";
+		String s = "-91283472332";
 		System.out.println(stringToInt(s));
 	}
 
