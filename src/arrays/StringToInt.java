@@ -61,46 +61,6 @@ public class StringToInt {
 		// We have formed a valid number without any overflow/underflow.
 		// Return it after multiplying it with its sign.
 		return sign * result;
-
-
-
-// 		for(; i<s.length(); i++) {
-// 			if (s.charAt(i) == ' ')
-// 				continue;
-//             else if (s.charAt(i) == '+') {
-//                 if (flag)
-//                     return 0;
-//                 flag = true;
-//             }
-// 			else if(s.charAt(i) == '-') {
-// 				// i=1;
-//                 if (flag)
-//                     return 0;
-// 				r=-1;
-//                 flag = true;
-// 			}
-// 			else {
-// 				int v = s.charAt(i) - '0';
-// 				if (v <0 || v>9) {
-
-// 					if (val*r > Integer.MAX_VALUE) {
-// 						return Integer.MAX_VALUE;
-// 					}
-//         else if (val*r < Integer.MIN_VALUE) {
-//             return Integer.MIN_VALUE;
-//         }
-// 		return (int) (val*r);
-// 				}
-// 				val = val*10 + v;
-// 			}
-// 		}
-//         if (val*r > Integer.MAX_VALUE) {
-// 						return Integer.MAX_VALUE;
-// 					}
-//         else if (val*r < Integer.MIN_VALUE) {
-//             return Integer.MIN_VALUE;
-//         }
-// 		return (int) (val*r);;
 	}
 
 	public static void main(String[] args) {
