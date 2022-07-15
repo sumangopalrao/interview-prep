@@ -51,7 +51,6 @@ public class KeepCitySkyline {
 			    }
 			}
 			rowHeights[i] = maxRow;
-//			System.out.println("The value of the row "+ i + " is "+ rowHeights[i]);
 		}
 		
 		for(int j=0; j<colLen; j++) {
@@ -62,7 +61,7 @@ public class KeepCitySkyline {
 			    }
 			}
 			colHeights[j] = maxCol;
-//			System.out.println("The value of the col "+ j + " is "+ colHeights[j]);
+
 		}
 		
 		int count = 0;
