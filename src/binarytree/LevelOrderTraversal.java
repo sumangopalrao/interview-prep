@@ -1,5 +1,9 @@
 package binarytree;
 
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+
 public class LevelOrderTraversal {
 
     
@@ -11,9 +15,45 @@ public class LevelOrderTraversal {
         root.right = new Node(3);
         root.left.right= new Node(4);
         
-        System.out.println("Height of the tree is"+ height(root));
+//        System.out.println("Height of the tree is"+ height(root));
         int d = height(root);
         levelOrderTraversal(root, d);
+
+
+        List<List<Integer>> res = levelOrderUsingIteration(root);
+        System.out.println(res);
+    }
+
+    public static List<List<Integer>> levelOrderUsingIteration(Node root) {
+        List<List<Integer>> list = new ArrayList<>();
+        List<Integer> vals = new ArrayList<>();
+        if(root == null) {
+            return list;
+        }
+
+        LinkedList<Node> current = new LinkedList<>();
+        LinkedList<Node> next = new LinkedList<>();
+        current.add(root);
+
+        while( !current.isEmpty()) {
+            Node curr = current.remove();
+            if(curr.left != null) {
+                next.add(curr.left);
+            }
+            if(curr.right != null) {
+                next.add(curr.right);
+            }
+
+            vals.add(curr.data);
+            if (current.isEmpty()) {
+                current = next;
+                next = new LinkedList<>();
+                list.add(vals);
+                vals = new ArrayList<>();
+
+            }
+        }
+        return list;
     }
     
     public static void levelOrderTraversal(Node root, int d)
