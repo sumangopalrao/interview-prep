@@ -1,4 +1,6 @@
 //ArdenDertat find coniguous longest sum array
+// Leetcode - Find maximum sum array
+
 package dynamicprogramming;
 
 public class MaxSumArray {
@@ -14,5 +16,4 @@ public class MaxSumArray {
 		}
 		System.out.println(maxSum);
 	}
-
 }
