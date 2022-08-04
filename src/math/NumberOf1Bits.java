@@ -10,13 +10,10 @@ public class NumberOf1Bits {
 		int n = 111111111;
 		int count = 0;
 		for(int i=1; i<33; i++) {
-			// while(n > 0) {
 			if((n & (1 << i)) != 0) {
 				count++;
 			}
-			// n = n >> 1;
 		}
-//		return count;
 		System.out.println(count);
 	}
 
