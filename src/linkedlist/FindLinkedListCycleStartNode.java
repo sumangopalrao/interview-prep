@@ -11,10 +11,13 @@ public class FindLinkedListCycleStartNode {
 		Node d = new Node(4);
 		Node e = new Node(5);
 		a.link = b; b.link = c; c.link=d; d.link = e; e.link = null;
+		assert getCycleStart(a) != null;
+		assert getCycleStart(a) != null;
 		System.out.println(getCycleStart(a).data);
 
 	}
 
+    static Node getCycleStart(Node head) {
     static Node getCycleStart(Node head) {
 
         if (head == null || head.link == null) {
