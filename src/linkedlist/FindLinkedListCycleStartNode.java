@@ -13,15 +13,14 @@ public class FindLinkedListCycleStartNode {
 		a.link = b; b.link = c; c.link=d; d.link = e; e.link = null;
 		assert getCycleStart(a) != null;
 		assert getCycleStart(a) != null;
-		System.out.println(getCycleStart(a).data);
+//		System.out.println(getCycleStart(a).data);
 
 	}
 
     static Node getCycleStart(Node head) {
-    static Node getCycleStart(Node head) {
 
         if (head == null || head.link == null) {
-            return false;
+            return null;
         }
 		Node slower = head;
 		Node runner = head;
