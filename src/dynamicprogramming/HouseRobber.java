@@ -1,11 +1,14 @@
-package dynamicprogramming;
+// Leetcode: HouseRobber - Find the maximum amount that can be robbed given that no two adjacent houses can be robbed
 
+package dynamicprogramming;
 import java.util.Arrays;
 
 public class HouseRobber {
+
     public static void main(String[] args) {
         int[] arr = new int[]{1, 2, 3, 1, 5, 6, 7, 8};
         System.out.println(rob(arr));
+        System.out.println(robLoop(arr));
     }
 
     private static int rob(int[] nums) {
@@ -20,10 +23,18 @@ public class HouseRobber {
         if (n == 2) {
             return Math.max(nums[0], nums[1]);
         }
+        return Math.max(nums[n-1] + rob(Arrays.copyOfRange(nums, 0, n-2)), rob(Arrays.copyOfRange(nums, 0, n-1)));
+    }
 
-        int maxStartingAtOne = nums[0] + rob(Arrays.copyOfRange(nums, 2, n));
-        int maxStartingAtTwo = nums[1] + rob(Arrays.copyOfRange(nums, 3, n));
-
-        return Math.max(maxStartingAtOne, maxStartingAtTwo);
+    private static int robLoop(int[] nums) {
+        int maxStartingAtOne = 0;
+        int maxStartingAtTwo = 0;
+        int temp = 0;
+        for (int num : nums) {
+            temp = Math.max(num + maxStartingAtOne, maxStartingAtTwo);
+            maxStartingAtOne = maxStartingAtTwo;
+            maxStartingAtTwo = temp;
+        }
+        return temp;
     }
 }
