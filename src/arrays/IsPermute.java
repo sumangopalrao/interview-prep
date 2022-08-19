@@ -10,15 +10,16 @@ public class IsPermute {
         for(int i=0; i<s1.length(); i++) {
             count[s1.charAt(i) - 'a']++;
         }
-        
+
         for(int i=0; i<s2.length(); i++) {
-             count[s2.charAt(i) - 'a']--;
-             if(count[s2.charAt(i) - 'a'] < 0)
-                 return false;
+            int i1 = count[s2.charAt(i) - 'a'];
+            i1--;
+            if(i1 < 0)
+                return false;
         }
         return true;
     }
-    
+
     public static void main(String[] args) {
         System.out.println(isPermutation("bca", "abc"));
     }

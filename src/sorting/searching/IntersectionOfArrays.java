@@ -5,7 +5,7 @@ package sorting.searching;
 public class IntersectionOfArrays {
 	
 	private static int[] intersect(int[] a, int[] b) {
-		int[] out = new int[a.length < b.length ? a.length : b.length];
+		int[] out = new int[Math.min(a.length, b.length)];
 		int i=0; 
 		int j=0;
 		int k=0;

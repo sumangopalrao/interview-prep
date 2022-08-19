@@ -10,7 +10,7 @@ public enum CardValue {
 	SIX(6),
 	SEVEN(7);
 
-	int value;
+	final int value;
 	
 	CardValue(int val) {
 		this.value = val;

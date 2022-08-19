@@ -60,7 +60,5 @@ public class CopyListWithRandomPointer {
             System.out.println("The random node value is "+curr.random.val);
             curr = curr.next;
         }
-//        Node c = rotateList(currA, 2);
-//        Node.printList(c);
     }
 }

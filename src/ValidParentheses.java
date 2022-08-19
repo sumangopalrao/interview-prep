@@ -9,7 +9,6 @@ public class ValidParentheses {
         System.out.println(isValidParentheses("()[]{}"));
         System.out.println(isValidParentheses("(]"));
     }
-
     private static boolean isValidParentheses(String str) {
         Stack<Character> st = new Stack<>();
 

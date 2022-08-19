@@ -5,7 +5,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PascalsTriangle {
-
     public static void main(String[] args) {
         List<List<Integer>> res = pascals(8);
         for (List<Integer> r : res) {

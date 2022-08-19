@@ -67,10 +67,7 @@ public class KeepCitySkyline {
 		int count = 0;
 		for(int i=0; i<rowLen; i++) {
 			for(int j=0; j<colLen; j++) {
-//			    System.out.println("The rowHeight value:"+rowHeights[i]+" , the colHeight value:"+colHeights[j]);
-//			    System.out.println("The grid value is:"+grid[i][j]);
 				int addValue = Math.min(rowHeights[i], colHeights[j]) - grid[i][j];
-//			    System.out.println("The add value is:"+addValue);
 				count += addValue;
 			}
 		}

@@ -8,7 +8,7 @@ public class StringToInt {
 	private static String intToString(int m) {
 		StringBuilder str = new StringBuilder();
 		if(m == 0)
-			return new String("0");
+			return "0";
 		int n = Math.abs(m);
 		while(n > 0) {
 			int r = n%10;
