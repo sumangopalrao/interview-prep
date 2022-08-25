@@ -29,7 +29,6 @@ public class ThreeSum {
             List<List<Integer>> pairs = twoSum(arr, sum, i);
                 for (List<Integer> pair : pairs) {
                     List<Integer> r = new ArrayList<>();
-//                    r.add(arr[i]);
                     for (Integer elem : pair) {
                         r.add(elem);
                     }
@@ -42,8 +41,7 @@ public class ThreeSum {
     private static List<List<Integer>> twoSum(int[] a, int sum, int excludedIndex) {
         HashMap<Integer, Integer> counts = new HashMap<>();
 
-        Set<Integer> set = new HashSet<Integer>();
-//        int[] res = new int[2];
+        Set<Integer> set = new HashSet<>();
         List<List<Integer>> res = new ArrayList<>();
 
         for(int i=excludedIndex + 1; i<a.length; i++) {
@@ -76,17 +74,12 @@ public class ThreeSum {
 
 
     private static List<List<Integer>> findPair(int[] a, int sum, int excludedIndex) {
-        Set<Integer> set = new HashSet<Integer>();
-//        int[] res = new int[2];
+        Set<Integer> set = new HashSet<>();
         List<List<Integer>> res = new ArrayList<>();
 
         for(int i=excludedIndex; i<a.length; i++)
         {
-//            if (i == excludedIndex)
-//                continue;
             if(set.contains(sum-a[i])) {
-//                res[0] = i;
-//                res[1] = sum - a[i];
                 List<Integer> pair = new ArrayList<>();
                 pair.add(a[i]);
                 pair.add(sum - a[i]);
