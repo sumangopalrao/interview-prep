@@ -5,6 +5,9 @@ package math;
 public class CountPrimes {
     public static void main(String[] args) {
         System.out.println(isPrime(12));
+        System.out.println(isPrime(10));
+        System.out.println(isPrime(0));
+        System.out.println(isPrime(1));
     }
 
     private static int isPrime(int n) {
