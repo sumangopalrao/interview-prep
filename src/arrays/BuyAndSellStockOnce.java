@@ -8,13 +8,12 @@ public class BuyAndSellStockOnce {
 	private static int maxGain(int[] arr) {
 		int lowest_so_far = Integer.MAX_VALUE;
 		int max_gain = 0;
-		for(int i=0; i<arr.length; i++) {
-			if(arr[i] < lowest_so_far) {
-				lowest_so_far = arr[i];
-			}
-			else if(arr[i] > lowest_so_far) {
-				int gain = arr[i] - lowest_so_far;
-				if(gain > max_gain) 
+		for (int j : arr) {
+			if (j < lowest_so_far) {
+				lowest_so_far = j;
+			} else if (j > lowest_so_far) {
+				int gain = j - lowest_so_far;
+				if (gain > max_gain)
 					max_gain = gain;
 			}
 		}
