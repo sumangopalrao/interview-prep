@@ -20,26 +20,19 @@ public class PascalsTriangle {
         List<Integer> row1 = new ArrayList<>();
         row1.add(1);
         res.add(row1);
-        if (rows == 1) {
-            return res;
-        }
 
-        List<Integer> row2 = new ArrayList<>();
-        row2.add(1);
-        row2.add(1);
-        res.add(row2);
-        if (rows == 2) {
-            return res;
-        }
-
-        for (int i=2; i < rows; i++) {
+        for (int i=1; i < rows; i++) {
             List<Integer> rowValues = new ArrayList<>();
-            rowValues.add(1);
+
             List<Integer> parentRow = res.get(i - 1);
+
+            rowValues.add(1);
+
             for (int j = 1; j < i; j++) {
                 int sumVal =  parentRow.get(j - 1) + parentRow.get(j);
                 rowValues.add(sumVal);
             }
+
             rowValues.add(1);
             res.add(rowValues);
         }
