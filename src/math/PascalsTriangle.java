@@ -1,4 +1,4 @@
-//Leetcode: Given a row number find the Pascals triangle of the value
+//Leetcode: Given a row number find the Pascal's triangle of the value
 package math;
 
 import java.util.ArrayList;
