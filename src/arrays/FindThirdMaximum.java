@@ -1,3 +1,5 @@
+// Find the third maximum of the given array
+
 package arrays;
 
 import java.util.Collections;
@@ -44,7 +46,7 @@ public class FindThirdMaximum {
     public static Integer thirdMaxWithSet(int[] nums) {
         Set<Integer> vals = new HashSet<Integer>();
         for (int num : nums) {
-            vals.add((Integer) num);
+            vals.add(num);
         }
 
         Integer maxSoFar = -1;

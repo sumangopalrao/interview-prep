@@ -18,7 +18,7 @@ public class KthLargestInArray {
             k--;
         }
 
-        return (int) queue.peek();
+        return queue.peek();
     }
 
     public static void main(String[] args) {
