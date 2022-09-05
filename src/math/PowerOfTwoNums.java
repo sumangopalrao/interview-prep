@@ -1,3 +1,5 @@
+//Leetcode: Find the power of a raised to b
+
 package math;
 
 public class PowerOfTwoNums {
