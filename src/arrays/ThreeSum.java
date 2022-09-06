@@ -1,3 +1,5 @@
+// Leetcode: Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] such that i != j, i != k, and j != k, and nums[i] + nums[j] + nums[k] == 0.
+
 package arrays;
 
 import java.util.*;
@@ -19,7 +21,6 @@ public class ThreeSum {
 
     private static List<List<Integer>> findTriplets(int[] arr) {
         List<List<Integer>> res = new ArrayList<>();
-        Set<Integer> seen = new HashSet<>();
 
         for (int i=0; i<arr.length - 2; i++) {
             if (i > 0 && arr[i-1] == arr[i])
@@ -28,10 +29,7 @@ public class ThreeSum {
 
             List<List<Integer>> pairs = twoSum(arr, sum, i);
                 for (List<Integer> pair : pairs) {
-                    List<Integer> r = new ArrayList<>();
-                    for (Integer elem : pair) {
-                        r.add(elem);
-                    }
+                    List<Integer> r = new ArrayList<>(pair);
                     res.add(r);
                 }
             }
@@ -41,7 +39,6 @@ public class ThreeSum {
     private static List<List<Integer>> twoSum(int[] a, int sum, int excludedIndex) {
         HashMap<Integer, Integer> counts = new HashMap<>();
 
-        Set<Integer> set = new HashSet<>();
         List<List<Integer>> res = new ArrayList<>();
 
         for(int i=excludedIndex + 1; i<a.length; i++) {
