@@ -1,4 +1,4 @@
-//Program to find the kth largest element in a BST.
+//Program to find the kth the largest element in a BST.
 // http://blog.gainlo.co/index.php/2016/06/03/second-largest-element-of-a-binary-search-tree/
 
 package binarytree;
@@ -17,8 +17,7 @@ public class KthLargestInBST {
 		count += 1;
 		if(count == k)
 			return node;
-		Node left = findKthLargest(node.left);
-		return left;
+		return findKthLargest(node.left);
 	}
 	
 	public static void main(String[] args) {
