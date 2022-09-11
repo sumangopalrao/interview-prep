@@ -1,3 +1,5 @@
+//Leetcode:: Running sum of 1D Array
+
 package arrays;
 
 import java.util.Arrays;
