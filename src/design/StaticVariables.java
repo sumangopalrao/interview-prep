@@ -10,11 +10,11 @@ public class StaticVariables {
 		
 		obj.inc();
 		
-		System.out.println("After: "+obj.i);
+		System.out.println("After: "+ i);
 	
 		obj.inc1();
 		
-		System.out.println("After second: "+obj.i);
+		System.out.println("After second: "+ i);
 	}
 	
 	
