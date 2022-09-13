@@ -54,11 +54,11 @@ public class SubtractList {
 		
 		Node head = Node.initializeSample();
 		System.out.println("Input");
-		LinkedList in = new LinkedList();
+		LinkedList<Number> in = new LinkedList<Number>();
 //		in.printList();
 		Node sub = subtract(head);
 		System.out.println("Output");
-		LinkedList list = new LinkedList();
+		LinkedList<Number> list = new LinkedList<Number>();
 		
 //		list.printList();
 	}

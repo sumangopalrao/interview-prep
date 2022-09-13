@@ -1,6 +1,6 @@
 package linkedlist;
 
-class LinkedList {
+class LinkedList<I extends Number> {
     class Node {
         int val;
         Node next;
