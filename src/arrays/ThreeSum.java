@@ -7,8 +7,7 @@ import java.util.*;
 public class ThreeSum {
 
     public static void main(String[] args) {
-        int[] arr = new int[]{0,0,0};
-        Arrays.sort(arr);
+        int[] arr = new int[]{-1,0,1,2,-1,-4};
         List<List<Integer>> res = findTriplets(arr);
 
         for (List<Integer> row : res) {
@@ -20,18 +19,35 @@ public class ThreeSum {
     }
 
     private static List<List<Integer>> findTriplets(int[] arr) {
+        Arrays.sort(arr);
         List<List<Integer>> res = new ArrayList<>();
 
         for (int i=0; i<arr.length - 2; i++) {
             if (i > 0 && arr[i-1] == arr[i])
                 continue;
             int sum = arr[i] * -1;
+            int low = i+1;
+            int high = arr.length - 1;
 
-            List<List<Integer>> pairs = twoSum(arr, sum, i);
-                for (List<Integer> pair : pairs) {
-                    List<Integer> r = new ArrayList<>(pair);
-                    res.add(r);
+            while (low < high) {
+                if (arr[low] + arr[high] == sum) {
+                    res.add(Arrays.asList(arr[i], arr[low], arr[high]));
+                    while (low < high && arr[low] == arr[low + 1]) low++;
+                    while (low < high && arr[high] == arr[high - 1]) high--;
+                    low++;
+                    high--;
+                } else if (arr[low] + arr[high] < sum) {
+                    low++;
+                } else {
+                    high--;
                 }
+            }
+
+//            List<List<Integer>> pairs = twoSum(arr, sum, i);
+//                for (List<Integer> pair : pairs) {
+//                    List<Integer> r = new ArrayList<>(pair);
+//                    res.add(r);
+//                }
             }
         return res;
     }
