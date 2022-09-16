@@ -23,10 +23,10 @@ public class ThreeSum {
         List<List<Integer>> res = new ArrayList<>();
 
         for (int i=0; i<arr.length - 2; i++) {
-            if (i > 0 && arr[i-1] == arr[i])
+            if (i > 0 && arr[i - 1] == arr[i])
                 continue;
             int sum = arr[i] * -1;
-            int low = i+1;
+            int low = i + 1;
             int high = arr.length - 1;
 
             while (low < high) {
@@ -42,13 +42,7 @@ public class ThreeSum {
                     high--;
                 }
             }
-
-//            List<List<Integer>> pairs = twoSum(arr, sum, i);
-//                for (List<Integer> pair : pairs) {
-//                    List<Integer> r = new ArrayList<>(pair);
-//                    res.add(r);
-//                }
-            }
+        }
         return res;
     }
 
