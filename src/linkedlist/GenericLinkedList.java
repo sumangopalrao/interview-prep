@@ -6,9 +6,7 @@ public class GenericLinkedList<T> {
 	Node<T> head;
 	
 	public boolean isEmpty() {
-		if(head == null)
-			return true;
-		return false;
+		return head == null;
 	}
 	
 	public void add(T element) {
@@ -31,6 +29,7 @@ public class GenericLinkedList<T> {
 		Node<T> prev = null;
 		while(curr != null) {
 			if(curr.data == element) {
+				assert prev != null;
 				prev.next = curr.next;
 				return true;
 			}
@@ -47,6 +46,7 @@ public class GenericLinkedList<T> {
 			if(curr.data == element) {
 				return true;
 			}
+			curr = curr.next;
 		}
 		return false;
 	}
@@ -59,6 +59,4 @@ public class GenericLinkedList<T> {
 			this.next = null;
 		}
 	}
-	
-	
 }

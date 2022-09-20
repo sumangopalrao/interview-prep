@@ -1,4 +1,4 @@
-//Program to print the first n fibonacci numbers
+//Leetcode: Program to print the first n fibonacci numbers
 package math;
 
 public class FibonacciSeries {

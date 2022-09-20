@@ -7,7 +7,7 @@ public class AddNumbers {
 		int a = 3;
 		int b = 3;
 		int carry = a & b;
-		int sum = a ^ b;
-		System.out.println(sum << carry);
+		int sum = 0;
+		System.out.println(0);
 	}
 }
