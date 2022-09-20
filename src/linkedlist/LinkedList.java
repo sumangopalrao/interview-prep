@@ -108,26 +108,6 @@ class LinkedList<I extends Number> {
             if (prev.next == null) {
                 tail = prev;
             }
-            /*
-            if (curr == null) {
-                prev.next = null;
-                tail = prev;
-            }
-            else {
-                prev.next = curr.next;
-                size--;
-            }
-            */
         }
     }
 }
-
-/**
-* Your LinkedList object will be instantiated and called as such:
-* LinkedList obj = new LinkedList();
-* int param_1 = obj.get(index);
-* obj.addAtHead(val);
-* obj.addAtTail(val);
-* obj.addAtIndex(index,val);
-* obj.deleteAtIndex(index);
-*/

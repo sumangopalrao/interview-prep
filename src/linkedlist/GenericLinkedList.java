@@ -4,7 +4,6 @@ package linkedlist;
 public class GenericLinkedList<T> {
 	
 	Node<T> head;
-	
 	public boolean isEmpty() {
 		return head == null;
 	}
