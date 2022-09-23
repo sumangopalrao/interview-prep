@@ -4,7 +4,6 @@ package linkedlist;
 public class SwapNodes {
 
     public static void main(String[] args) {
-//        Node head = Node.initializeSample();
         Node head = Node.initializeRandomSample();
         Node res = swapNodes(head);
         Node.printList(res);
@@ -21,8 +20,6 @@ public class SwapNodes {
 
 
         Node next = head.link;
-//        Node nextHead = next.link;
-//        next.link = head;
         head.link = swapNodes(next.link);
         next.link = head;
 
