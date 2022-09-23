@@ -1,5 +1,5 @@
+//WAP to convert a decimal number to its binary.
 package math;
-//WAP to convert a decimal number to its binary. 
 import java.util.Stack;
 
 public class DecimalToBinary {
@@ -16,13 +16,11 @@ public class DecimalToBinary {
 			res.push(rem);
 			n = n/2;
 		}
-		String val = "";
+		StringBuilder val = new StringBuilder();
 		while (!res.empty())
 		{
-			val = val + res.pop() ;
+			val.append(res.pop());
 		}
 	    System.out.println("The out is"+ val);
-
 	}
-
 }
