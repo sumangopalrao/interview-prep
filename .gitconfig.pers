@@ -1,0 +1,11 @@
+# ~/personal/.gitconfig.pers
+ 
+[user]
+email = suman.gopalrao@gmail.com
+name = Suman Rao 
+ 
+[github]
+user = “austin665”
+ 
+[core]
+sshCommand = “ssh -i ~/.ssh/personal”
