@@ -7,15 +7,8 @@ public class RootEqualsSumOfChildren {
         Node root = new Node(10);
         Node a = new Node(5);
         Node b = new Node(6);
-//        Node c = new Node(4);
-//        Node d = new Node(5);
-//        Node e = new Node(6);
-
         root.left = a;
         root.right = b;
-//        a.left = c;
-//        a.right = d;
-//        b.left = e;
 
         System.out.println(checkTree(root));
     }
