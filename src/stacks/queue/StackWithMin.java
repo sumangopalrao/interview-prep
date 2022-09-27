@@ -46,7 +46,7 @@ public class StackWithMin {
 		System.out.println(st.getMin());
 	}
 	
-	private class Tuple {
+	private static class Tuple {
 		int val;
 		int min;
 		

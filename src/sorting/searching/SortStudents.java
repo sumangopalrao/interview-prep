@@ -6,7 +6,7 @@ import java.util.Arrays;
 
 public class SortStudents {
 
-	public class Student implements Comparable<Student> { 
+	public static class Student implements Comparable<Student> {
 		String name;
 		double gpa;
 		Student(String name, double gpa) {
@@ -26,10 +26,10 @@ public class SortStudents {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		SortStudents obj = new SortStudents();
-		SortStudents.Student s1 = obj.new Student("abc", 3.6);
-		SortStudents.Student s2 = obj.new Student("abc", 3.6);
-		SortStudents.Student s3 = obj.new Student("abcdef", 3.3);
-		SortStudents.Student s4 = obj.new Student("xyz", 2.0);
+		SortStudents.Student s1 = new Student("abc", 3.6);
+		SortStudents.Student s2 = new Student("abc", 3.6);
+		SortStudents.Student s3 = new Student("abcdef", 3.3);
+		SortStudents.Student s4 = new Student("xyz", 2.0);
 		SortStudents.Student[] arr = new SortStudents.Student[4];
 		arr[0] = s1;
 		arr[1] = s2;

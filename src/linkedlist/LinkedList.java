@@ -1,7 +1,7 @@
 package linkedlist;
 
 class LinkedList<I extends Number> {
-    class Node {
+    static class Node {
         int val;
         Node next;
         public Node(int val) {

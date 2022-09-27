@@ -5,7 +5,7 @@ package design;
 
 public class HashMap {
 	
-	class Node{
+	static class Node{
 		int key;
 		int value;
 		Node next;
@@ -108,8 +108,7 @@ public class HashMap {
 		if(arr[index] == null) {
 			return null;
 		}
-		Node list = arr[index];
-		Node curr = list;
+		Node curr = arr[index];
 		while(curr != null) {
 			if(curr.key == key) {
 				return curr.value;
