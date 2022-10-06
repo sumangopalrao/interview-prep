@@ -13,6 +13,9 @@ public class FindCommonCharacters {
         }
     }
 
+    private static List<String> commonChars(String[] words) {
+    }
+
 //    public static List<String> commonChars(String[] words) {
 
 //        for (int i = 97; i<=122; i++) {
