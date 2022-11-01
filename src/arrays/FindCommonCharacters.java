@@ -12,16 +12,4 @@ public class FindCommonCharacters {
             System.out.println(s);
         }
     }
-
-    private static List<String> commonChars(String[] words) {
-    }
-
-//    public static List<String> commonChars(String[] words) {
-
-//        for (int i = 97; i<=122; i++) {
-//            for (String word : words) {
-//            }
-//        }
-
-//    }
 }
