@@ -1,15 +1,13 @@
 package arrays;
 
-
 import java.util.List;
 
 public class FindCommonCharacters {
 
     public static void main(String[] args) {
-        String[] words = {"bella","label","roller"};
+        String[] words = { "bella", "label", "roller" };
         // List<String> out = commonChars(words);
         // for (String s : out) {
-            // System.out.println(s);
-        }
+        // System.out.println(s);
     }
 }
