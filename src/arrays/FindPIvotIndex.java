@@ -2,7 +2,7 @@
 
 package arrays;
 
-public class FindPivotIndex {
+public class FindPIvotIndex {
     public static int pivotIndex(int[] nums) {
 
         int totalSum = 0;
