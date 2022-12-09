@@ -7,15 +7,70 @@ import java.util.List;
 
 public class HashSet {
 
-    private final int MAX_LEN = 100000; // the amount of buckets
-    private List<Integer>[] set;
+    class Node {
+        int val;
+        Node next;
 
-    public HashSet() {
-        set = (List<Integer>[]) new ArrayList[MAX_LEN];
+        public Node(int val) {
+            this.val = val;
+        }
     }
 
-    public void add(int val) {
+    private int size;
+    private Node[] array;
 
+    public HashSet() {
+        this.array = new Node[size];
+    }
+
+    public void add(int key) {
+        int index = key % this.size;
+        if (this.array[index] == null) {
+            this.array[index] = new Node(key);
+            return;
+        } else {
+            Node p = this.array[index];
+            while (p != null && p.val != key)
+                p = p.next;
+
+            if (p != null)
+                return;
+
+            Node newHead = new Node(key);
+            newHead.next = this.array[index];
+            this.array[index] = newHead;
+        }
+    }
+
+    public void remove(int key) {
+        int index = key % this.size;
+        if (this.array[index] == null) {
+            return;
+        } else {
+            Node p = this.array[index];
+
+            if (p.val == key) {
+                this.array[index] = p.next;
+                return;
+            }
+
+            while (p.next != null && p.next.val != key)
+                p = p.next;
+            if (p.next == null)
+                return;
+
+            p.next = p.next.next;
+        }
+    }
+
+    public boolean contains(int key) {
+        int index = key % this.size;
+        if (this.array[index] == null)
+            return false;
+        Node p = this.array[index];
+        while (p != null && p.val != key)
+            p = p.next;
+        return p != null;
     }
 
     public static void main(String[] args) {
