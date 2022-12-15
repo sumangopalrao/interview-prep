@@ -8,7 +8,10 @@ package sorting.searching;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
+import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
 
 public class GroupAnagrams {
 
@@ -37,6 +40,48 @@ public class GroupAnagrams {
 			i++;
 		}
 		return sorted;
+	}
+
+	public List<List<String>> groupAnagrams(String[] strs) {
+
+		String[] in = new String[strs.length];
+		for (int i = 0; i < in.length; i++) {
+			in[i] = strs[i];
+		}
+		List<List<String>> out = new ArrayList<List<String>>();
+		HashMap<String, List<Integer>> map = new HashMap<String, List<Integer>>();
+
+		for (int i = 0; i < in.length; i++) {
+			char[] c = in[i].toCharArray();
+			Arrays.sort(c);
+			String s = new String(c);
+			in[i] = s;
+		}
+
+		for (int j = 0; j < in.length; j++) {
+			if (map.get(in[j]) != null) {
+				List<Integer> indexes = map.get(in[j]);
+				indexes.add(j);
+				map.put(in[j], indexes);
+			} else {
+				List<Integer> ind = new ArrayList<Integer>();
+				ind.add(j);
+				map.put(in[j], ind);
+			}
+		}
+
+		Iterator it = map.entrySet().iterator();
+		int k = 0;
+		while (it.hasNext()) {
+			Map.Entry<String, List<Integer>> entry = (Map.Entry<String, List<Integer>>) it.next();
+			List<String> list = new ArrayList<String>();
+			for (Integer i : entry.getValue()) {
+				list.add(strs[i]);
+			}
+			out.add(list);
+		}
+
+		return out;
 	}
 
 	public static void main(String[] args) {
