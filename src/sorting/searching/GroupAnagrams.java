@@ -1,6 +1,7 @@
 //Given an array of strings, group the anagrams together.
 //CTCI 10.2
 // https://leetcode.com/problems/group-anagrams/
+// https://leetcode.com/explore/learn/card/hash-table/185/hash_table_design_the_key/1124/
 
 package sorting.searching;
 
