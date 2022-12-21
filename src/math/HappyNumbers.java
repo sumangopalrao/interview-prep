@@ -1,0 +1,32 @@
+package math;
+
+public class HappyNumbers {
+
+    public static boolean isHappy(int n) {
+
+        if (n / 10 == 0 && n % 10 == 1)
+            return true;
+
+        // if (n / 10 == 0)
+        // return false;
+
+        int sum = sumOfSquares(n);
+        return isHappy(sum);
+    }
+
+    public static int sumOfSquares(int n) {
+        int sum = 0;
+        while (n > 0) {
+            int i = n % 10;
+            n = n / 10;
+            sum += i * i;
+        }
+        System.out.println("Sum of " + n + " is" + sum);
+        return sum;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(isHappy(3));
+    }
+
+}
