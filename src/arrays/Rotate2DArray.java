@@ -1,12 +1,9 @@
 //Rotate a nxn matrix by 90 degrees clockwise.
 //CTCI 1.7
 //Leetcode: Rotate Image
-
+// https://leetcode.com/problems/rotate-image/description/
 package arrays;
-
-
 public class Rotate2DArray {
-	
 	
 	private static int[][] rotateArray(int[][] arr) {
 		if(arr.length == 0)
