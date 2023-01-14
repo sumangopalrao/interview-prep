@@ -1,3 +1,5 @@
+// Leetcode: Find if number is a happy number; sum of squares of individual numbers should be 1
+// https://leetcode.com/problems/happy-number/description/
 package math;
 
 public class HappyNumbers {
@@ -10,8 +12,13 @@ public class HappyNumbers {
         // if (n / 10 == 0)
         // return false;
 
-        int sum = sumOfSquares(n);
-        return isHappy(sum);
+        int left = n;
+        int right = sumOfSquares(n);
+        while (right != 1 && left != right) {
+            left = sumOfSquares(left);
+            right = sumOfSquares(sumOfSquares(right));
+        }
+        return right == 1;
     }
 
     public static int sumOfSquares(int n) {
@@ -21,12 +28,12 @@ public class HappyNumbers {
             n = n / 10;
             sum += i * i;
         }
-        System.out.println("Sum of " + n + " is" + sum);
+        // System.out.println("Sum of " + n + " is" + sum);
         return sum;
     }
 
     public static void main(String[] args) {
-        System.out.println(isHappy(3));
+        System.out.println(isHappy(2));
     }
 
 }
