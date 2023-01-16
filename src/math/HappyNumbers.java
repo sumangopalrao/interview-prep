@@ -9,9 +9,6 @@ public class HappyNumbers {
         if (n / 10 == 0 && n % 10 == 1)
             return true;
 
-        // if (n / 10 == 0)
-        // return false;
-
         int left = n;
         int right = sumOfSquares(n);
         while (right != 1 && left != right) {
@@ -28,7 +25,6 @@ public class HappyNumbers {
             n = n / 10;
             sum += i * i;
         }
-        // System.out.println("Sum of " + n + " is" + sum);
         return sum;
     }
 
