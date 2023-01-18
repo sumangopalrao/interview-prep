@@ -1,5 +1,6 @@
 // WAP to find the number of one bits in an integer.
 // Leetcode: Hamming weight
+// https://leetcode.com/problems/number-of-1-bits/description/
 
 package math;
 
