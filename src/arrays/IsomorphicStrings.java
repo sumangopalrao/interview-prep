@@ -3,7 +3,7 @@ package arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-// WAP to find if two strings are isomorphic; if one string can be converted to another string
+// Find if two strings are isomorphic; if one string can be converted to another string
 // https://leetcode.com/explore/learn/card/hash-table/184/comparison-with-other-data-structures/1117/
 
 public class IsomorphicStrings {
@@ -27,6 +27,7 @@ public class IsomorphicStrings {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+
 		System.out.println(isIsomorphic("foo", "bar"));
 		System.out.println(isIsomorphic("egg", "add"));
 		System.out.println(isIsomorphic("eg", "fg"));
