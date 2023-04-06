@@ -54,14 +54,4 @@ public class RotateList {
         }
         return i;
     }
-
-    private static Node getTail(Node head) {
-        Node curr = head;
-        if (curr == null)
-            return null;
-        while (curr.link != null) {
-            curr = curr.link;
-        }
-        return curr;
-    }
 }
