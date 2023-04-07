@@ -22,8 +22,6 @@ public class RemoveNThFromLast {
             return head.link;
         }
 
-        Node prev = head;
-        
         while (curr.link != null) {
             curr = curr.link;
             currLast = currLast.link;
