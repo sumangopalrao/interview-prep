@@ -1,5 +1,5 @@
-//Given an array of strings, group the anagrams together.
-//CTCI 10.2
+// Given an array of strings, group the anagrams together.
+// CTCI 10.2
 // https://leetcode.com/problems/group-anagrams/
 // https://leetcode.com/explore/learn/card/hash-table/185/hash_table_design_the_key/1124/
 
@@ -27,19 +27,6 @@ public class GroupAnagrams {
 		public int compare(String s1, String s2) {
 			return sortedChars(s1).compareTo(sortedChars(s2));
 		}
-	}
-
-	private static String[] group(String[] in) {
-		List<List<String>> out = new ArrayList<List<String>>();
-		String[] sorted = new String[in.length];
-		int i = 0;
-		for (String s : in) {
-			char[] sortedStr = s.toCharArray();
-			Arrays.sort(sortedStr);
-			sorted[i] = new String(sortedStr);
-			i++;
-		}
-		return sorted;
 	}
 
 	public List<List<String>> groupAnagrams(String[] strs) {
@@ -71,7 +58,6 @@ public class GroupAnagrams {
 		}
 
 		Iterator it = map.entrySet().iterator();
-		int k = 0;
 		while (it.hasNext()) {
 			Map.Entry<String, List<Integer>> entry = (Map.Entry<String, List<Integer>>) it.next();
 			List<String> list = new ArrayList<String>();
