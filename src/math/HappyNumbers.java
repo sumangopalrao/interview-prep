@@ -2,6 +2,9 @@
 // https://leetcode.com/problems/happy-number/description/
 package math;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class HappyNumbers {
 
     public static boolean isHappy(int n) {
@@ -27,10 +30,19 @@ public class HappyNumbers {
         return sum;
     }
 
-    //todo:: add using set
+    // using hash set instead
+    public static boolean isHappySet(int n) {
+        Set<Integer> seen = new HashSet<Integer>();
+
+        while (!seen.contains(n) && n != 1) {
+            seen.add(n);
+            n = sumOfSquares(n);
+        }
+        return n == 1;
+    }
 
     public static void main(String[] args) {
         System.out.println(isHappy(2));
+        System.out.println(isHappySet(2));
     }
-
 }
