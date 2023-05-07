@@ -27,6 +27,8 @@ public class HappyNumbers {
         return sum;
     }
 
+    //todo:: add using set
+
     public static void main(String[] args) {
         System.out.println(isHappy(2));
     }
