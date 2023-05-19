@@ -1,5 +1,6 @@
 // Find if the graph is bipartie, a bipartite is one where each node in one set has an edge to another node in another set of vertices
 // https://leetcode.com/problems/is-graph-bipartite/
+// NEED REVIEW
 
 package graphs;
 
