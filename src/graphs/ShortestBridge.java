@@ -1,3 +1,6 @@
+// Find the shortest bridge between two islands represented by a 2D matrix. Where 1 denotes land and 0 denotes water. Find the number of 0s that need to be flipped.
+// https://leetcode.com/problems/shortest-bridge/description/
+// TODO:: NEED REVIEW
 package graphs;
 
 import java.util.LinkedList;
@@ -40,18 +43,16 @@ public class ShortestBridge {
             }
         }
         return bfs(grid, queue, visited);
-        
     }
 
     public static int bfs(int[][] grid, Queue<int[]> queue, boolean[][] visited) {
         int distance = 0;
+        int[][] dirs = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};
 
-        int[][] dirs = {{-1, 0}, {1,0}, {0,-1}, {0,1}};
-
-        while(!queue.isEmpty()) {
+        while (!queue.isEmpty()) {
             int size = queue.size();
 
-            for (int i=0; i<size; i++) {
+            for (int i = 0; i < size; i++) {
                 int[] curr = queue.poll();
 
                 for (int[] dir : dirs) {
@@ -61,24 +62,26 @@ public class ShortestBridge {
                     if (newRow < 0 || newRow >= grid.length || newCol < 0 || newCol >= grid[0].length || visited[newRow][newCol]) {
                         continue;
                     }
-    
+
                     // If we've reached the second island, return the distance
                     if (grid[newRow][newCol] == 1) {
                         return distance;
                     }
-                    
+
                     // Mark the cell as visited and add it to the queue
                     visited[newRow][newCol] = true;
+                    queue.add(new int[]{newRow, newCol});
                 }
             }
-            distance++;
+            
+            distance++; // Increment distance at the end of each level
         }
 
         return distance;
     }
-    
+
     public static void dfs(int[][] grid, boolean[][] visited, int i, int j) {
-        if(i >= grid.length || i < 0 || j<0 || j >= grid[0].length || visited[i][j] || grid[i][j] == 0) {
+        if(i >= grid.length || i < 0 || j<0 || j >= grid[0].length || grid[i][j] == 0 || visited[i][j]) {
             return;
         }
         visited[i][j] = true;
