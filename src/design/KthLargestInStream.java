@@ -28,7 +28,6 @@ public class KthLargestInStream {
         return this.findKthLargest();
     }
     
-    
     private int findKthLargest() {
         PriorityQueue<Integer> queue = new PriorityQueue<Integer>(Collections.reverseOrder());
         int count = k;
@@ -44,7 +43,6 @@ public class KthLargestInStream {
         
         return queue.peek();
     }
-    
     
     public static void main(String[] args) {
         KthLargestInStream obj = new KthLargestInStream(3, new int[]{4, 5, 8, 2});
