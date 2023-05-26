@@ -1,7 +1,7 @@
 // Find the longest substring without repeating characters
 // https://leetcode.com/problems/longest-substring-without-repeating-characters/description/
 
-package arrays;
+package slidingwindow;
 
 import java.util.HashSet;
 import java.util.Set;
