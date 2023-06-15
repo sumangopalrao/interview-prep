@@ -1,3 +1,4 @@
+// Print the binary tree elements in level order
 package binarytree;
 
 import java.util.ArrayList;
@@ -50,7 +51,6 @@ public class LevelOrderTraversal {
                 next = new LinkedList<>();
                 list.add(vals);
                 vals = new ArrayList<>();
-
             }
         }
         return list;
