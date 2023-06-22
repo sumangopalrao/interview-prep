@@ -3,8 +3,6 @@
 
 package design;
 
-import java.util.List;
-
 public class HashSet {
 
     class Node {

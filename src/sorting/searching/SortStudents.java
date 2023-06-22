@@ -25,7 +25,6 @@ public class SortStudents {
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		SortStudents obj = new SortStudents();
 		SortStudents.Student s1 = new Student("abc", 3.6);
 		SortStudents.Student s2 = new Student("abc", 3.6);
 		SortStudents.Student s3 = new Student("abcdef", 3.3);

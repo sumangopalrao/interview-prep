@@ -13,7 +13,6 @@ import java.util.Stack;
 public class BuildOrder {
 	
 	private static Stack<String> findBuildOrder(String[] projects, String[][] dependencies) {
-		Stack<String> order = new Stack<String>();
 		Map<String, List<String>> adjList = convertToList(dependencies);
 		return findOrder(projects, adjList);
 	}

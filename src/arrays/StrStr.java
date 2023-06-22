@@ -9,7 +9,6 @@ public class StrStr {
 
     static int strStr(String haystack, String needle) {
         int j=0;
-        int index=0;
         if(haystack.equals(needle))
             return 0;
         if(needle.isEmpty())

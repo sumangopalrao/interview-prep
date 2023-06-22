@@ -12,15 +12,6 @@ public class RotateArray {
         }
     }
 
-    private static int[] rotate(int[] arr, int k) {
-        int[] outArr = new int[arr.length];
-        for (int i=0; i<arr.length; i++) {
-            int newPos = (i + k) % arr.length;
-            outArr[newPos] = arr[i];
-        }
-        return outArr;
-    }
-
     private static int[] rotateInPlace(int[] arr, int k) {
         if (k == 0 || arr.length == 1)
             return arr;
