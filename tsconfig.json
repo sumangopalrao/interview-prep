@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+        "target": "es5", // specify ECMAScript target version
+        "module": "commonjs", // specify module code generation
+        "strict": true, // enable all strict type-checking options
+        "esModuleInterop": true, // enables default imports to work with CommonJS modules
+        "lib": ["dom", "es2015"] // list of library files to be included in the compilation
+    }
+}
