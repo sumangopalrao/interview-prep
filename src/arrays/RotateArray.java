@@ -1,4 +1,5 @@
 //  Leetcode: Rotate Array
+// https://leetcode.com/problems/rotate-array/
 package arrays;
 
 public class RotateArray {
@@ -24,7 +25,6 @@ public class RotateArray {
     }
 
     private static int[] reverseSubArray(int[] arr, int startIndex, int endIndex) {
-        int n = arr.length - 1;
         for (int i=startIndex; i<=(startIndex + endIndex) / 2; i++) {
             int swap = arr[i];
             arr[i] = arr[startIndex + endIndex - i];
