@@ -8,7 +8,7 @@ public class Permutations {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
         int[] nums = new int[]{1, 2, 3, 4};
-		List<List<Integer>> list = permute(nums);
+		permute(nums);
 	}
 	
 	public static List<List<Integer>> permute(int[] nums) {
