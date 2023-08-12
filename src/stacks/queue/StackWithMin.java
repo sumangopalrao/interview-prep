@@ -47,11 +47,9 @@ public class StackWithMin {
 	}
 	
 	private static class Tuple {
-		int val;
 		int min;
 		
 		Tuple(int val, int min) {
-			this.val = val;
 			this.min = min;
 		}
 		
