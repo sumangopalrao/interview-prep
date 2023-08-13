@@ -71,7 +71,6 @@ public class DailyTemperatures {
 
     public static void main(String[] args) {
         // int[] res = dailyTemperatures(new int[]{73,74,75,71,69,72,76,73});
-        // int[] res = dailyTemperatures(new int[]{30,60,90});
         int[] res = dailyTemperaturesStack(new int[]{73,74,75,71,69,72,76,73});
 
         for (int val : res) {
