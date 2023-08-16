@@ -56,9 +56,6 @@ public class SubtractList {
 		System.out.println("Input");
 		Node sub = subtract(head);
 		System.out.println("Output");
-		LinkedList<Number> list = new LinkedList<Number>();
-		
-//		list.printList();
 	}
 
 }
