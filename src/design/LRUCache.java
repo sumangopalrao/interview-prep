@@ -1,4 +1,5 @@
-//Program to implement a LRU cache   in Java.   
+//Program to implement a LRU cache in Java.   
+//LC:https://leetcode.com/problems/lru-cache/
 package design;
 
 import java.util.Deque;
