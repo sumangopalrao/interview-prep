@@ -1,5 +1,6 @@
 //Program to implement a LRU cache in Java.   
 //LC:https://leetcode.com/problems/lru-cache/
+
 package design;
 
 import java.util.Deque;
@@ -20,21 +21,20 @@ public class LRUCache {
 	}
 	
 	public void put(int key, int value) {
-		if(list.size() == size) {
+		if (map.containsKey(key)) {
+            list.remove(key);
+        } else if (list.size() == size) {
+			// If cache is full, remove the LRU item
 			int removeKey = list.pollLast();
 			map.remove(removeKey);
-			list.removeLast();
-			list.addFirst(key);
-			map.put(key, value);
 		}
-		else {
-			list.addFirst(key);
-			map.put(key,  value);
-		}
+        // Add the new/updated item to the front of the list and to the map
+		list.addFirst(key);
+		map.put(key, value);
 	}
 	
 	public int get(int key) {
-		if(map.get(key) != null) {
+		if (map.containsKey(key)) {
 			list.remove(key);
 			list.addFirst(key);
 			return map.get(key);
