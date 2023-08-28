@@ -25,7 +25,7 @@ public class Merge {
 			return headA;
 		
 		Node currA = headA;
-		Node currB= headB;
+		Node currB = headB;
 		Node currC = new Node();
 		Node headC = currC;
 		

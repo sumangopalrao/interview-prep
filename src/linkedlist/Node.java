@@ -73,5 +73,53 @@ public class Node {
 	    }
 	    return a;
 	}
+
+	public static Node initializeSortedSample()
+	{
+		Node a = new Node(2);
+		Node b = new Node(4);
+		Node c = new Node(6);
+		Node d = new Node(8);
+		Node e = new Node(10);
+		Node f = new Node(12);
+		a.link = b; b.link = c; c.link=d; d.link = e; e.link = f;f.link = null;
+	    Node start= a;	
+	    while (start!= null)
+	    {
+	    	start = start.link;
+	    }
+	    return a;
+	}
+
+	public static Node initializeSortedSampleB() 
+	{
+		Node a = new Node(1);
+		Node b = new Node(2);
+		Node c = new Node(3);
+		Node d = new Node(4);
+		a.link=b;b.link=c;c.link=d;
+		d.link=null;
+		return a;
+	}
+
+	public static Node initializeSortedSampleC()
+	{
+		Node a = new Node(1);
+		Node b = new Node(3);
+		Node c = new Node(5);
+		Node d = new Node(7);
+		a.link=b;b.link=c;c.link=d;
+		d.link=null;
+		return a;
+	}
+
+	public static Node initializeSortedSampleD()
+	{
+		Node b = new Node(3);
+		Node d = new Node(7);
+		b.link=d;
+		d.link=null;
+		return b;
+	}
 	
 }
