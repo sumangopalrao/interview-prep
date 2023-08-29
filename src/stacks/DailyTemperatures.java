@@ -27,6 +27,7 @@ public class DailyTemperatures {
 		
 	}
 
+    // Brute force solutoin for Daily Temperatures
     private static int[] dailyTemperatures(int[] temperatures) {
 
         int[] res = new int[temperatures.length];
