@@ -21,7 +21,6 @@ public class ReverseBetweenNodes {
             curr = curr.link;
             i++;
         }
-        // System.out.println("The value of i:"+i);
         Node temp_prev = prev;
         Node temp_curr = curr;
         Node next = null;
