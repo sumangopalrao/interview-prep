@@ -1,4 +1,6 @@
 // WAP to replicate a string n times
+// https://leetcode.com/problems/repeat-string/
+
 /**
  * @param {number} times
  * @return {string}
