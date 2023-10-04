@@ -2,8 +2,8 @@
 // https://leetcode.com/problems/parallel-execution-of-promises-for-individual-results-retrieval/
 
 /**
-* @param {Array<Function>} functions
-* @return {Promise<Array>}
+* @param {Array<Function>} functions array of functions
+* @return {Promise<Array>} promise of the result
 */
 var promiseAllSettled = function(functions) {
 
