@@ -1,12 +1,9 @@
-// Write a function that returns the name of the method
-// https://leetcode.com/problems/infinite-method-object/description/
-
 /**
  * @return {Object}
  */
 var createInfiniteObject = function() {
     const handler = {
-        get(target, prop, receiver) {
+        get(_, prop) {
             return () => prop;
         }
     };
