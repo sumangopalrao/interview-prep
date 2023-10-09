@@ -5,6 +5,5 @@ function isEmpty(obj: Record<string, any> | any[]): boolean {
     if ((Array.isArray(obj) && !obj.length) || JSON.stringify(obj) === '{}') {
         return true;
     }
-
     return false;
 };
