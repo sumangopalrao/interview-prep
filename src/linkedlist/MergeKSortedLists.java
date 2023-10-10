@@ -131,7 +131,7 @@ class NodeTuple {
         static Node findNextLowestNode(PriorityQueue<NodeTuple> pq, int[] indices) {
             NodeTuple lowestTuple = pq.poll();
             indices[lowestTuple.index]++;
-            pq.offer(new NodeTuple(0, 0)
+            pq.offer(new NodeTuple(0, 0);
             Node sortedList = new Node(lowestTuple.value);
             return sortedList;
         }
@@ -155,7 +155,6 @@ class NodeTuple {
             for(int i=0; i<lists.length; i++) {
                 int index = indices[i];
                 if (lists[i] != null) {
-                    // for 
                     
                 }
             }
