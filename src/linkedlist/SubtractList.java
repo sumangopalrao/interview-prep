@@ -54,7 +54,6 @@ public class SubtractList {
 		
 		Node head = Node.initializeSample();
 		System.out.println("Input");
-		Node sub = subtract(head);
 		System.out.println("Output");
 	}
 
