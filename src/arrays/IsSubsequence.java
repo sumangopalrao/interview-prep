@@ -13,7 +13,6 @@ public class IsSubsequence {
     }
 
     private static boolean isSubsequence(String s, String t) {
-
         int j = 0;
         for (int i=0; i<s.length(); i++) {
             while (j < t.length() && t.charAt(j) != s.charAt(i)) {
@@ -27,7 +26,6 @@ public class IsSubsequence {
             if (t.charAt(j) == s.charAt(i)) {
                 j++;
             }
-
         }
         return true;
     }
