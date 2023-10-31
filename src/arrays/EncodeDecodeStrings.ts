@@ -7,12 +7,8 @@ function encode(strs: string[]): string {
     let encodedString = "";
     const DELIMITER = "#";
     strs.forEach(str => {
-        // console.log("String is", str);
         const len = str.length;
-        // console.log("String length is", len);
         encodedString = encodedString.concat(String(len)).concat(DELIMITER).concat(str);
-        // encodedString = encodedString.concat("#").concat("5");
-        // console.log("Encoded string is", encodedString);
     })
     return encodedString;
 	
@@ -47,6 +43,6 @@ function decode(s: string): string[] {
  * decode(encode(strs));
  */
 
-// console.log(decode(encode(["hello", "world"])));
-// console.log(decode(encode([""])));
+console.log(decode(encode(["hello", "world"])));
+console.log(decode(encode([""])));
 console.log(decode(encode(["63/Rc","h","BmI3FS~J9#vmk","7uBZ?7*/","24h+X","O "]))); // ["63/Rc","h","BmI3FS~J9#vmk","7uBZ?7*/","24h+X","O "]
