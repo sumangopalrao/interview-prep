@@ -20,4 +20,4 @@ Date.prototype.nextDay = function() {
  const date = new Date("2014-06-20");
  console.log("Next date is", date.nextDay()); // "2014-06-21"
  const date1 = new Date("2017-10-31");
- console.log("Next date is", date1.nextDay());
+ console.log("Next date is", date1.nextDay()); // "2017-11-01"
