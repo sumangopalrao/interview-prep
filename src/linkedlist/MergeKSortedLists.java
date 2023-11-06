@@ -3,7 +3,6 @@
 
 package linkedlist;
 
-import java.util.Arrays;
 import java.util.PriorityQueue;
 
 class NodeTuple {
@@ -131,7 +130,7 @@ class NodeTuple {
         static Node findNextLowestNode(PriorityQueue<NodeTuple> pq, int[] indices) {
             NodeTuple lowestTuple = pq.poll();
             indices[lowestTuple.index]++;
-            pq.offer(new NodeTuple(0, 0);
+            pq.offer(new NodeTuple(0, 0));
             Node sortedList = new Node(lowestTuple.value);
             return sortedList;
         }
@@ -149,11 +148,8 @@ class NodeTuple {
         }
         
         static int findLowestWithIndex(Node[] lists, int[] indices) {
-            int lowestSoFar = Integer.MAX_VALUE;
-            int lowestIndex = -1;
             
             for(int i=0; i<lists.length; i++) {
-                int index = indices[i];
                 if (lists[i] != null) {
                     
                 }
