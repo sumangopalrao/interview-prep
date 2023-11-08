@@ -3,7 +3,6 @@
 
 package linkedlist;
 
-import java.util.Arrays;
 import java.util.PriorityQueue;
 
 class NodeTuple {
