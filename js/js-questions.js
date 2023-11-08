@@ -71,8 +71,6 @@ function lookUpProfile(firstName, prop){
     }
   }
   return "No such contact";
-
-// Only change code above this line
 }
 
 // Change these values to test your function
@@ -109,8 +107,6 @@ function whatIsInAName(collection, source) {
 }
 
 //whatIsInAName([{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: null }, { first: "Tybalt", last: "Capulet" }], { last: "Capulet" });
-
-
 
 function myReplace(str, before, after) {
   var arr = str.split(" ");
