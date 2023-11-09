@@ -1,4 +1,4 @@
-// Add function to print the last element of an array
+// WAP to add a function to print the last element of an array
 // https://leetcode.com/problems/array-prototype-last/description/
 
 Array.prototype.last = function() {
