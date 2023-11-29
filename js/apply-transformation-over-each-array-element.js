@@ -1,4 +1,5 @@
 // WAP that implements a map kinda function on an array
+// https://leetcode.com/problems/apply-transform-over-each-element-in-array/description/
 
 /**
  * @param {number[]} arr
