@@ -13,7 +13,6 @@ var flat = function (arr, n) {
 
     const res = [];
 
-    // function flattenArray(arr, currDepth, maxDepth) {
         for (const elem of arr) {
             if (Array.isArray(elem)) {
                 res.push(...flat(elem, n -1));
@@ -22,9 +21,6 @@ var flat = function (arr, n) {
                 res.push(elem);
             }
         }
-    // }
-// 
-    // return flattenArray(arr, 0, n);
     return res;
 };
 
