@@ -28,3 +28,4 @@ var curry = function(fn) {
 //  console.log(csum(1, 2, 3)); // 3
 //  console.log(csum(1, 2)); // 3
  console.log(csum(1)(2)); // 3
+ console.log(csum(1, 2, 3, 4, 5)); // 3
