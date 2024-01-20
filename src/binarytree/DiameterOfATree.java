@@ -1,6 +1,11 @@
+// Find the diameter of the binary tree
+// https://leetcode.com/problems/diameter-of-binary-tree/
+
 package binarytree;
 
 public class DiameterOfATree {
+
+    static int max = Integer.MIN_VALUE;
 
     public static void main(String[] args) {
         // TODO Auto-generated method stub
@@ -9,45 +14,20 @@ public class DiameterOfATree {
         root.left = new Node(2);
         root.right = new Node(3);
         root.left.right = new Node(4);
-        // System.out.println("Height of the tree is" + height(root));
-        System.out.println("Diameter of tree is" + diameterOfBinaryTree(root));
+        System.out.println("Diameter of tree is" + getHeight(root));
+        System.out.println("Max diameter of tree is" + max);
+
     }
 
-    public static int diameterOfBinaryTree(Node root) {
+    public static int getHeight(Node root) {
         if (root == null)
-            return 0;
-        if (root.left == null || root.right == null) {
-            return 1;
-        }
-        return getDiameter(root, 0);
-        // int leftDepth = height(root.left);
-        // int rightDepth = maxLeft = diameterOfBinaryTree(root.left);
-        // int diameter = maxLeft + maxRight;
-        // return diameter;
-    }
+            return -1;
 
-    public static int getDiameter(Node root, int maxDiameterSoFar) {
-        if (root == null)
-            return 0;
+        int leftmax = getHeight(root.left);
 
-        if (root.left == null || root.right == null) {
-            return 1;
-        }
+        int rightmax = getHeight(root.right);
 
-        int leftmax = height(root.left);
-
-        int rightmax = height(root.right);
-
-        return Math.max(leftmax, rightmax) + 1;
-    }
-
-    public static int height(Node root) {
-        if (root == null)
-            return 0;
-
-        int leftmax = height(root.left);
-
-        int rightmax = height(root.right);
+        max = Math.max(max, (leftmax + rightmax + 2));
 
         return Math.max(leftmax, rightmax) + 1;
     }
