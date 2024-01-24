@@ -1,10 +1,10 @@
-//WAP to reverse a linked list
+// Program to reverse a linked list
+// https://leetcode.com/problems/reverse-linked-list/
 package linkedlist;
 
 public class Reverse {
 
 	public static void main(String[] args) {
-		// TODO:: Implement using recursion
 		
 		Node curr = Node.initializeSample();
 		Node head = curr;
