@@ -14,7 +14,7 @@ public class DiameterOfATree {
         root.left = new Node(2);
         root.right = new Node(3);
         root.left.right = new Node(4);
-        System.out.println("Diameter of tree is" + getHeight(root));
+        getHeight(root);
         System.out.println("Max diameter of tree is" + max);
 
     }
