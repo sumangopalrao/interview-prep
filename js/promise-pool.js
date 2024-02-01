@@ -21,12 +21,7 @@ var promisePool = async function(functions, n) {
                 res();
             }
             while(i< functions.length && numberOfPromisesPending < n) {
-                // console.log('Function is', functions[i]);
-                // const exectutedValue = functions[i]();
-                // console.log("executed value is", exectutedValue);
                 functions[i]().then(() => {
-                    // console.log("result is", res);
-                    // results.push(res);
                     numberOfPromisesPending--;
                     cb();
                 });
