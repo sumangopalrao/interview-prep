@@ -1,8 +1,8 @@
-package binarytree;
-
-// Count the nubmer of good nodes in a binary tree
-// The number of good nodes is if all the parent nodes are less than or equal to given tree node value
+// Count the number of good nodes in a binary tree
+// A node is a good node if all the parent nodes are less than or equal to given tree node value
 // https://leetcode.com/problems/count-good-nodes-in-binary-tree/description/
+
+package binarytree;
 
 public class CountGoodNodes {
 
