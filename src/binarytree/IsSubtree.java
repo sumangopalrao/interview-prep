@@ -1,4 +1,4 @@
-// WAP to find out if a tree has a subtree of another tree
+// WAP to find out if a tree has a subtree of another tree, a subtree is a tree that consists of a node in a tree and all of its descendents
 // https://leetcode.com/problems/subtree-of-another-tree/
 
 package binarytree;
@@ -12,22 +12,9 @@ public class IsSubtree {
         root.left = new Node(2);
         root.right = new Node(2);
         root.left.left = new Node(3);
-        // root.left.right= new Node(4);
-        // root.right.left= new Node(5);
-        // root.right.right= new Node(3);
 
         Node subRoot = new Node(2);
         subRoot.left = new Node(3);
-        // subRoot.right = new Node(2);
-
-        // Node subRoot = new Node(1);
-        // subRoot.left = new Node(2);
-        // subRoot.right = new Node(2);
-        // subRoot.left.left= new Node(3);
-        // subRoot.left.right= new Node(4);
-        // subRoot.right.left= new Node(5);
-        // subRoot.right.right= new Node(3);
-
         System.out.println(isSymmetricTree(root, subRoot));
     }
 
