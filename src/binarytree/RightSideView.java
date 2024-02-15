@@ -26,7 +26,7 @@ public class RightSideView {
         a.right = d;
         b.left = e;
 
-        rightSideView(root, 5);
+        rightSideView(root);
     }
 
     private List<Integer> rightSideView(Node root) {

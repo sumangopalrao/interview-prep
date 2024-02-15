@@ -10,5 +10,5 @@ function maxCount(m: number, n: number, ops: number[][]): number {
         minY = Math.min(minY, op[1]);
     });
 
-    return minX * minY
+    return minX * minY;
 };
