@@ -14,7 +14,6 @@ export class TimeMap {
         if (this.map.has(key)) {
             const valuesForKey = this.map.get(key);
             valuesForKey?.push({timestamp: timestamp, value: value});
-            // valuesForKey?.sort((a, b) => a.timestamp - b.timestamp);
         } else {
             this.map.set(key, [({timestamp: timestamp, value: value})]);
         }
@@ -63,8 +62,6 @@ export class TimeMap {
 
 const timeMap = new TimeMap();
 timeMap.set("foo", "bar", 1);  // store the key "foo" and value "bar" along with timestamp = 1.
-// console.log(timeMap.get("foo", 1));    
-// console.log(timeMap.get("foo", 3));    
 timeMap.set("foo", "bar2", 4); // store the key "foo" and value "bar2" along with timestamp = 4.
 console.log(timeMap.get("foo", 4));         // return "bar2"
 console.log(timeMap.get("foo", 5)); 
