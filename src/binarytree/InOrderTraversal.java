@@ -10,7 +10,6 @@ public class InOrderTraversal {
         root.left  = new Node(2);
         root.right = new Node(3);
         root.left.right= new Node(4);
-        //root.left.right.right= new Node(5);
         
         inorder(root);
 
