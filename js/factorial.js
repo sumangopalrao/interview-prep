@@ -15,5 +15,3 @@ function* factorial(n) {
 const f = factorial(3);
  
 console.log(f.next().value);
-// console.log(f.next().value);
-// console.log(f.next().value);
