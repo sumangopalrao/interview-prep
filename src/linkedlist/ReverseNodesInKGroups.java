@@ -8,7 +8,6 @@ public class ReverseNodesInKGroups {
   public static void main(String[] args) {
 
     System.out.println("Hello World");
-
   }
 
   public static Node reverseKGroup(Node head, int k) {
