@@ -35,9 +35,7 @@ public class MostFrequentEvenElement {
                     highestFrequency = frequency;
                 }
             }
-
             return mostFrequentEven;
-
         }
     }
 }
