@@ -1,7 +1,7 @@
 // Program to find the most frequent even elements in array
 // https://leetcode.com/problems/most-frequent-even-element/description/
 
-package arrays;
+package heap;
 
 import java.util.HashMap;
 import java.util.Map;
