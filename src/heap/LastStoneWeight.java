@@ -8,8 +8,7 @@ import java.util.PriorityQueue;
 
 public class LastStoneWeight {
     public static void main(String[] args) {
-        // int[] stones = new int[]{2, 7, 4, 1, 8, 1};
-        int[] stones = new int[]{1};
+        int[] stones = new int[]{2, 7, 4, 1, 8, 1};
         System.out.println(lastStoneWeight(stones));
     }
 
@@ -36,7 +35,6 @@ public class LastStoneWeight {
                 heap.offer(x - y);
             }
         }
-        // System.out.println("Highest" + heap.peek());
         return 0;
     }
 }
