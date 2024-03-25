@@ -29,20 +29,14 @@ var areDeeplyEqual = function (o1, o2) {
 
     function isChildrenEqual(o1, o2) {
         const keys = Object.keys(o1);
-        // console.log('Keys are', keys);
         if (Object.keys(o1).length !== Object.keys(o2).length)
             return false;
         for (let key of keys) {
-            // console.log('Key is', key);
             if (Object.hasOwn(o2, key)) {
-                // isValid = true;
                 if(!areDeeplyEqual(o1[key], o2[key]))
-                // console.log('Is valid', isValid);
-                // if (!isValid)
                     return false;
             }
             else {
-                // isValid = false;
                 return false;
             }
         };
@@ -63,9 +57,6 @@ var areDeeplyEqual = function (o1, o2) {
     return isChildrenEqual(o1, o2); 
 };
 
-// console.log('Boolean is', areDeeplyEqual(1, 2));
-// console.log(typeof [1, 2, 3]);
-// console.log(typeof { 'key': 1, 'val': 3});
 console.log(areDeeplyEqual({ key: 'value' }, { key: 'value' }));
 console.log(areDeeplyEqual({ key: 'value123' }, { key: 'value' }));
 console.log(areDeeplyEqual(['value123', 'value'], ['value123', 'value123231']));
