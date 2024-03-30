@@ -40,7 +40,8 @@ export function findMedianSortedArrays(nums1: number[], nums2: number[]): number
 
     return -1;
     
-    
+    // Second approach WIP :  
+
     // let a = nums1;
     // let b = nums2;
     
