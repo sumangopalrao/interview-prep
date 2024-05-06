@@ -1,6 +1,7 @@
 // Problem: Strobogrammatic Number
 // A strobogrammatic number is a number that looks the same when rotated 180 degrees (looked at upside down).
 // https://leetcode.com/problems/strobogrammatic-number/
+// TODO:: better solution!
 
 package arrays;
 
