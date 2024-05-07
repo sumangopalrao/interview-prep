@@ -1,11 +1,11 @@
 // Find the maximum path sum in the binary tree
 // https://leetcode.com/problems/binary-tree-maximum-path-sum/description/
 
-pacakge binarytree;
+package binarytree;
 
 public class MaxPathSum {
 
-    int maxSum = Integer.MIN_VALUE;
+    static int maxSum = Integer.MIN_VALUE;
 
     public static void main(String[] args) {
         // TODO Auto-generated method stub

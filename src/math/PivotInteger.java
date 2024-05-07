@@ -15,7 +15,7 @@ public class PivotInteger {
         for (int x = 1; x <= n; x++) {
             int sumUptoX = 0;
             int sumFromX = 0;
-            for (int i = 0; i <= x; i++) {
+            for (int i = 1; i <= x; i++) {
                 sumUptoX += i;
             }
 

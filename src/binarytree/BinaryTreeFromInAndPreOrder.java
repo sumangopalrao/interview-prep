@@ -47,5 +47,4 @@ public class BinaryTreeFromInAndPreOrder {
     return root;
     
   }
-
 }
