@@ -6,6 +6,7 @@ public class Node {
     Node left;
     Node right;
     boolean visited;
+    public char[] val;
     
     public Node(int val)
     {
