@@ -29,7 +29,7 @@ public class RightSideView {
         rightSideView(root);
     }
     
-    private List<Integer> rightSideView(Node root) {
+    private static List<Integer> rightSideView(Node root) {
         
         List<Integer> res = new ArrayList<Integer>();
         
