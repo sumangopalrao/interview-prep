@@ -12,7 +12,7 @@ public class SumOfUniqueElements {
         System.out.println(sumOfUniqueElements.sumOfUnique(new int[]{1, 2, 3, 4, 5}));
     }
     
-    public static int sumOfUnique(int[] nums) {
+    public int sumOfUnique(int[] nums) {
         
         int[] freq = new int[101];
         int sum = 0;
