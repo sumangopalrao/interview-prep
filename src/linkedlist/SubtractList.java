@@ -33,7 +33,6 @@ public class SubtractList {
 		if(head == null)
 			return null;
 		Node middle = getMiddle(head);
-		System.out.println("Middle value:"+middle.data);
 		Node reverseHead = reverse(middle);
 		Node curr = head;
 		Node revCurr = reverseHead;
