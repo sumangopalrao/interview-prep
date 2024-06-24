@@ -118,10 +118,6 @@ public class MergeKSortedLists {
             lowestHeap.offer(new NodeTuple(curr.data, i));
         }
         
-        // Node lowestNode = findLowestNode();
-        
-        // addNextNode()
-        
         return null;
         
     }
@@ -129,7 +125,7 @@ public class MergeKSortedLists {
     static Node findNextLowestNode(PriorityQueue<NodeTuple> pq, int[] indices) {
         NodeTuple lowestTuple = pq.poll();
         indices[lowestTuple.index]++;
-        pq.offer(new NodeTuple(0, 0);
+        pq.offer(new NodeTuple(0, 0));
         Node sortedList = new Node(lowestTuple.value);
         return sortedList;
     }
