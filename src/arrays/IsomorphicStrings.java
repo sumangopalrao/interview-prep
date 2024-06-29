@@ -32,5 +32,6 @@ public class IsomorphicStrings {
 		System.out.println(isIsomorphic("egg", "add"));
 		System.out.println(isIsomorphic("eg", "fg"));
 		System.out.println(isIsomorphic("badc", "baba"));
+		System.out.println(isIsomorphic("paper", "title"));
 	}
 }
