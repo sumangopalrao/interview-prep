@@ -1,5 +1,6 @@
-//EPI 6.6 -- Buy and sell stock once
+// EPI 6.6 -- Buy and sell stock once
 // Leetcode: Best time to Buy and Sell Stock
+// https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/
 
 package arrays;
 
