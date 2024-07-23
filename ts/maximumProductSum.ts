@@ -1,4 +1,4 @@
-// Find the maximum three numbers of array whose product is the highest
+// Program to find the maximum three numbers of array whose product is the highest
 // https://leetcode.com/problems/maximum-product-of-three-numbers/description/
 
 function maximumProduct(nums: number[]): number {
